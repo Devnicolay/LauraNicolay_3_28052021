@@ -1,0 +1,69 @@
+@import "./base/typography";
+@import "./base/base";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+
+@font-face
+{
+    font-family: shrikhand;  
+    src: url(polices/shrikhand/Shrikhand-Regular.ttf); 
+}
+
+
+
+@font-face
+{
+    font-family: roboto;
+    src: url(polices/roboto/Roboto-Regular.ttf);
+    src: url(polices/roboto/Roboto-Bold.ttf);
+}
+
+
+
+
+
+
+/* Pour mobiles */
+@media screen and (max-width: 767px) 
+{
+
+    
+
+}
+
+
+
+
+
+
+
+
+/* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 1024px)
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 1024px) 
+{
+
+    body
+    {
+        max-width: 1450px;
+    }
+
+
+}
+

@@ -1,0 +1,59 @@
+/* Pour mobiles */
+@media screen and (max-width: 767px) 
+{
+    footer
+    {
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 200px;
+    }
+
+
+    footer ul
+    {
+        list-style: none;
+    }
+
+
+
+    footer li
+    {
+        margin-bottom: 10px;
+    }
+
+
+
+    footer h2
+    {
+        font-family: shrikhand;
+        font-size: 1.5em;
+        display: inline-block;
+        margin: 10px 0px 15px 0px;
+    }
+
+
+
+    footer a:link
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    footer .fa-utensils
+    {
+        margin-right: 17px;
+        color: white;
+    }
+
+
+
+    footer .fa-hands-helping
+    {
+        margin-right: 10px;
+        color: white;
+    }
+
+
+}

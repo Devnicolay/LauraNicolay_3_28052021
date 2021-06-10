@@ -1,0 +1,155 @@
+@font-face
+{
+    font-family: shrikhand;  
+    src: url(polices/shrikhand/Shrikhand-Regular.ttf); 
+}
+
+
+
+@font-face
+{
+    font-family: roboto;
+    src: url(polices/roboto/Roboto-Regular.ttf);
+    src: url(polices/roboto/Roboto-Bold.ttf);
+}
+
+
+
+
+body
+{
+    background-image: url(/public/images/logo/ohmyfood@2x.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+body h1
+{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Pour mobiles */
+@media screen and (max-width: 767px) 
+{
+
+    /* La partie body */
+    body
+    {
+        margin: 80px 0px 0px 0px; 
+        background-position-x: 50%;
+        background-position-y: 10%;
+        font-family: roboto;
+    }
+
+
+
+    body h2
+    {
+        padding-left: 20px;
+    }
+
+
+
+
+
+
+
+
+
+    /* La partie footer */
+    footer
+    {
+        color: white;
+        background-color: rgb(59, 58, 58);
+        height: 200px;
+    }
+
+
+
+    footer ul
+    {
+        list-style: none;
+    }
+
+
+
+    footer li
+    {
+        margin-bottom: 10px;
+    }
+
+
+
+    footer span
+    {
+        font-family: shrikhand;
+        font-size: 1.2em;
+        display: inline-block;
+        margin: 10px 0px 15px 0px;
+    }
+
+
+
+    footer a:link
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    footer .fa-utensils
+    {
+        margin-right: 17px;
+    }
+
+
+
+    footer .fa-hands-helping
+    {
+        margin-right: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+/* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 1024px)
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 1024px) 
+{
+
+    body
+    {
+        background-position: 50px 30px;
+        max-width: 1450px;
+    }
+
+
+}
+
