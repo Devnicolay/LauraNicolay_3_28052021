@@ -29,7 +29,6 @@
                 align-items: center;
                 justify-content: center;
                 margin-left: -25px;
-
             }
             i 
             {
@@ -41,6 +40,14 @@
                 font-weight: bold;
             }
         }
+        .fonction--color
+            {
+               background-color: #efe5fa; 
+            }
+            .fa-store 
+            {
+                color: $primary-color;
+            }
     }
     
 

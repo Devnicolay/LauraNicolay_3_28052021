@@ -144,6 +144,12 @@ body header h1 {
     margin-left: 30px;
     font-weight: bold;
   }
+  #company-presentation .fonction--color {
+    background-color: #efe5fa;
+  }
+  #company-presentation .fa-store {
+    color: #9356DC;
+  }
 }
 /* Pour tablettes */
 /* Pour desktop */
