@@ -109,6 +109,42 @@ body header h1 {
   }
 }
 /* Pour mobiles */
+@media screen and (max-width: 767px) {
+  #company-presentation {
+    padding: 20px 0px;
+  }
+  #company-presentation h2 {
+    margin-left: 20px;
+  }
+  #company-presentation .fonction {
+    display: flex;
+    align-items: baseline;
+    align-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 30px 20px;
+    box-shadow: 0px 4px 8px 3px #c9c7c7;
+    padding: 10px;
+  }
+  #company-presentation .fonction .chiffre {
+    background-color: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -25px;
+  }
+  #company-presentation .fonction i {
+    margin-left: 40px;
+  }
+  #company-presentation .fonction p {
+    margin-left: 30px;
+    font-weight: bold;
+  }
+}
 /* Pour tablettes */
 /* Pour desktop */
 @media screen and (min-width: 1024px) {
@@ -131,32 +167,27 @@ body header h1 {
     background-color: #3b3a3a;
     height: 200px;
   }
-
   footer ul {
     list-style: none;
+    padding-left: 20px;
   }
-
   footer li {
     margin-bottom: 10px;
   }
-
   footer h2 {
     font-family: shrikhand;
     font-size: 1.5em;
     display: inline-block;
     margin: 10px 0px 15px 0px;
   }
-
   footer a:link {
     text-decoration: none;
     color: white;
   }
-
   footer .fa-utensils {
     margin-right: 17px;
     color: white;
   }
-
   footer .fa-hands-helping {
     margin-right: 10px;
     color: white;
