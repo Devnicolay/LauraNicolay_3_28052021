@@ -1,10 +1,15 @@
 /* Pour mobiles */
 @media screen and (max-width: 767px) 
 {
-    header
+    body 
     {
-        
+        margin: 0px;
+    }
 
+
+
+    #header-menu
+    {
         h1
         {
             color: black;
@@ -32,3 +37,14 @@
         }
     }
 }
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 1024px) {
+    body {
+      max-width: 1450px;
+    }
+  }
