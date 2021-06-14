@@ -1,8 +1,53 @@
 /* Pour mobiles */
 @media screen and (max-width: 767px) 
 {
+    #localization 
+    {
+        text-align: center;
+        background: linear-gradient(white, #e7e6e6);
+        
+        form
+        {
+            background-color: #F2F2F2;
+            box-shadow: 0px 4px 8px 0px rgb(201 199 199) inset;
+            display: flex;
+            justify-content: center;
 
-    
+            #input-search 
+            {
+                background-color: transparent;
+                border: none;
+            }
+            #input-search::placeholder
+            {
+                color: black;
+            }
+        }
+        h2, p
+        {
+            text-align: center;
+        }
+        h2 
+        {
+        margin: 40px 50px 0px 50px;
+        }
+        p 
+        {
+        margin: 20px 30px 30px 30px;
+        color: gray;
+        }
+        button 
+        {
+            border: none;
+            border-radius: 30px;
+            padding: 15px 20px;
+            background: linear-gradient($secondary-color, $primary-color);
+            color: white;
+            font-size: 1em;
+            margin-bottom: 60px;
+        }
+
+    }
 
 }
 
