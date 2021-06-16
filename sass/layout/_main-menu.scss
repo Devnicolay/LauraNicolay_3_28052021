@@ -1,0 +1,81 @@
+.main-menu
+{
+    img
+    {
+        height: 280px;
+    }
+
+    .menu 
+    {
+        background-color: #f7f7f7;
+        border-radius: 50px 50px 0px 0px;
+        margin-top: -60px;
+        position: relative;
+
+        h2 
+        {
+            font-size: 2em;
+            margin-top: 10px;
+            padding-left: 25px;
+        }
+
+        h3 
+        {
+            font-weight: 300;
+            margin-bottom: 5px;
+            padding-left: 25px;
+        }
+
+        .underline-title
+        {
+            width: 50px;
+            height: 3px;
+            background-color: $tertiary-color;
+            margin-left: 25px;
+        }
+
+        #button-order
+        {
+            @include button-gradient;
+            width: 40%;
+            text-align: center;
+        }
+
+        .button-order
+        {
+            display: flex;
+            justify-content: center;
+            padding: 60px 0px;
+        }
+
+
+        .flat
+        {
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+
+            h4 
+            {
+                font-size: 1.2em;
+                margin: 21px 0px 5px 20px;
+                padding-top: 15px;
+            }
+
+            p 
+            {
+                margin: 0px 0px 0px 20px;
+                font-size: 0.95em;
+            }
+
+            span 
+            {
+                font-weight: bold;
+                position: relative;
+                left: 300px;
+                bottom: 18px;
+            }
+        }
+    }
+}
