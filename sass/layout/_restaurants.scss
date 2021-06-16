@@ -42,12 +42,25 @@
                 margin: 8px 0px 0px 15px;
                 padding-bottom: 20px;
             }
-            .fa-heart
+            i
             {
                 position: absolute;
                 right: 30px;
                 bottom: 30px;
             }
+            .heart1
+            {
+                color: black;
+            }
+            .heart2
+            {
+                opacity: 0;
+            }
+            .heart2:active
+            {
+                @include animation-heart;
+            }
+            
             span
             {
                 background-color: $tertiary-color;
