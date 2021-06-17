@@ -1,80 +1,113 @@
-.main-menu
+/* Pour mobiles */
+@media screen and (max-width: 767px) 
 {
-    img
+    .main-menu
     {
-        height: 280px;
-    }
-
-    .menu 
-    {
-        background-color: #f7f7f7;
-        border-radius: 50px 50px 0px 0px;
-        margin-top: -60px;
-        position: relative;
-
-        h2 
+        img
         {
-            font-size: 2em;
-            margin-top: 10px;
-            padding-left: 25px;
+            object-fit: cover;
+            height: 272px;
+            width: 100%;
         }
 
-        h3 
+        .menu 
         {
-            font-weight: 300;
-            margin-bottom: 5px;
-            padding-left: 25px;
-        }
+            background-color: #f7f7f7;
+            border-radius: 50px 50px 0px 0px;
+            margin-top: -60px;
+            position: relative;
 
-        .underline-title
-        {
-            width: 50px;
-            height: 3px;
-            background-color: $tertiary-color;
-            margin-left: 25px;
-        }
-
-        #button-order
-        {
-            @include button-gradient;
-            width: 40%;
-            text-align: center;
-        }
-
-        .button-order
-        {
-            display: flex;
-            justify-content: center;
-            padding: 60px 0px;
-        }
-
-
-        .flat
-        {
-            background-color: white;
-            border-radius: 20px;
-            margin-left: 15px;
-            margin-right: 15px;
-
-            h4 
+            .title-heart
             {
-                font-size: 1.2em;
-                margin: 21px 0px 5px 20px;
-                padding-top: 15px;
+                display: flex;
+
+                h2 
+                {
+                    font-size: 2em;
+                    margin: 10px 0px 40px 0px;
+                    padding: 40px 0px 0px 25px;
+                }
+
+                .heart1, .heart2
+                {
+                    position: absolute;
+                    top: 52px;
+                    right: 45px;
+                }
+
+                .heart1
+                {
+                    color: black;
+                }
+
+                .heart2
+                {
+                    opacity: 0;
+                }
+
+                .heart2:active
+                {
+                @include animation-heart
+                }
             }
 
-            p 
+            h3 
             {
-                margin: 0px 0px 0px 20px;
-                font-size: 0.95em;
+                font-weight: 300;
+                margin-bottom: 5px;
+                padding-left: 25px;
             }
 
-            span 
+            .underline-title
             {
-                font-weight: bold;
-                position: relative;
-                left: 300px;
-                bottom: 18px;
+                width: 50px;
+                height: 3px;
+                background-color: $tertiary-color;
+                margin-left: 25px;
+            }
+
+            #button-order
+            {
+                @include button-gradient;
+                width: 40%;
+                text-align: center;
+            }
+
+            .button-order
+            {
+                display: flex;
+                justify-content: center;
+                padding: 60px 0px;
+            }
+
+
+            .flat
+            {
+                background-color: white;
+                border-radius: 20px;
+                margin-left: 15px;
+                margin-right: 15px;
+
+                h4 
+                {
+                    font-size: 1.2em;
+                    margin: 21px 0px 5px 20px;
+                    padding-top: 15px;
+                }
+
+                p 
+                {
+                    margin: 0px 0px 0px 20px;
+                    font-size: 0.95em;
+                }
+
+                span 
+                {
+                    font-weight: bold;
+                    position: relative;
+                    left: 300px;
+                    bottom: 18px;
+                }
             }
         }
     }
