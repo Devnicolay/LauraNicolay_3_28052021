@@ -374,6 +374,9 @@ body .main-menu h2 {
     justify-content: center;
     padding: 60px 0px;
   }
+  .main-menu .menu .flat:hover i {
+    display: unset;
+  }
   .main-menu .menu .flat {
     background-color: white;
     border-radius: 20px;
@@ -391,12 +394,69 @@ body .main-menu h2 {
     margin: 0px 0px 0px 20px;
     padding-bottom: 20px;
     font-size: 0.95em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    white-space: nowrap;
   }
   .main-menu .menu .flat span {
     font-weight: bold;
     position: absolute;
     right: 30px;
     bottom: 20px;
+  }
+  .main-menu .menu .flat i {
+    display: none;
+  }
+  .main-menu .menu .flat:hover p {
+    animation-name: ellipsis-flat;
+    animation-duration: 0.7s;
+    width: 50%;
+  }
+  @keyframes ellipsis-flat {
+    0% {
+      width: 70%;
+    }
+    100% {
+      transform: 40%;
+    }
+  }
+  .main-menu .menu .flat:hover span {
+    animation-name: slide-price;
+    animation-duration: 0.7s;
+  }
+  @keyframes slide-price {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+  }
+  .main-menu .menu .flat:hover i {
+    width: 60px;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    animation-name: slide-left;
+    animation-duration: 0.7s;
+  }
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50px);
+      transform: rotate(360deg);
+    }
   }
 }
 /* Pour mobiles */

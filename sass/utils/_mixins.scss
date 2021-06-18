@@ -47,3 +47,75 @@
     background-color: $tertiary-color;
     content: "";
 }
+
+
+@mixin animation-flat 
+{
+    p 
+    {
+        animation-name: ellipsis-flat;
+        animation-duration: 0.7s;
+        width: 50%;
+    }
+
+    @keyframes ellipsis-flat 
+    {
+        0%
+        {
+            width: 70%;
+        }
+        100%
+        {
+            transform: 40%;
+        }
+    }
+
+    span 
+    {
+        animation-name: slide-price;
+        animation-duration: 0.7s;
+    }
+
+    @keyframes slide-price 
+    {
+        0%
+        {
+            transform: translateX(0);
+        }
+        100%
+        {
+            transform: translateX(-100px);
+        }
+    }
+
+    i 
+    {
+        width: 60px;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+        color: white;
+        background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        animation-name: slide-left;
+        animation-duration: 0.7s;
+    }
+
+    @keyframes slide-left 
+    {
+        0%
+        {
+            transform: translateX(0);
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: translateX(-50px);
+            transform: rotate(360deg);
+        }
+    }
+}
