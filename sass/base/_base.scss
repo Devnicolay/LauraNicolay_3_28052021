@@ -1,12 +1,18 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-
 /* Pour mobiles */
 @media screen and (max-width: 767px) 
 {   
     body
     {
         margin: 0px;
+    }
+}
+
+
+/* Pour desktop */
+@media screen and (max-width: 1024px) 
+{   
+    body 
+    {
+        max-width: 1450px;
     }
 }

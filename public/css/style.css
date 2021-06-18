@@ -23,6 +23,12 @@ body .main-menu h2 {
     margin: 0px;
   }
 }
+/* Pour desktop */
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1450px;
+  }
+}
 /* Pour mobiles */
 @media screen and (max-width: 767px) {
   header h1 {
@@ -74,7 +80,7 @@ body .main-menu h2 {
   }
   #localization form {
     background-color: #F2F2F2;
-    box-shadow: 0px 4px 8px 0px #c9c7c7 inset;
+    box-shadow: 0px 15px 8px -10px #c9c7c7 inset;
     display: flex;
     justify-content: center;
   }
@@ -102,6 +108,11 @@ body .main-menu h2 {
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     font-size: 1em;
+    box-shadow: 0px 4px 8px 3px #c9c7c7;
+  }
+  #localization #button_restaurant:hover {
+    filter: brightness(150%);
+    box-shadow: 0px 4px 8px 3px #525050;
   }
 }
 /* Pour tablettes */
@@ -119,6 +130,32 @@ body .main-menu h2 {
   #company-presentation h2 {
     margin-left: 20px;
   }
+  #company-presentation ol {
+    counter-reset: my-counter;
+    list-style: none;
+    padding-left: 0px;
+  }
+  #company-presentation ol li {
+    counter-increment: my-counter;
+    position: relative;
+  }
+  #company-presentation ol li::before {
+    content: counter(my-counter);
+    background-color: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #company-presentation a:link {
+    text-decoration: none;
+  }
   #company-presentation .fonction {
     display: flex;
     align-items: baseline;
@@ -128,17 +165,7 @@ body .main-menu h2 {
     margin: 30px;
     box-shadow: 0px 4px 8px 3px #c9c7c7;
     padding: 10px;
-  }
-  #company-presentation .fonction .chiffre {
-    background-color: #9356DC;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -25px;
+    color: black;
   }
   #company-presentation .fonction i {
     margin-left: 40px;
@@ -147,10 +174,10 @@ body .main-menu h2 {
     margin-left: 30px;
     font-weight: bold;
   }
-  #company-presentation .fonction--color {
+  #company-presentation .fonction:hover {
     background-color: #efe5fa;
   }
-  #company-presentation .fa-store {
+  #company-presentation i:hover {
     color: #9356DC;
   }
 }
@@ -178,13 +205,6 @@ body .main-menu h2 {
     display: inline-block;
     margin: 50px 0px 10px 23px;
   }
-  .restaurants .card {
-    position: relative;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 4px 4px 8px 0px #c9c7c7;
-    margin: 20px;
-  }
   .restaurants .card img {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -209,7 +229,7 @@ body .main-menu h2 {
   .restaurants .card .heart2 {
     opacity: 0;
   }
-  .restaurants .card .heart2:active {
+  .restaurants .card .heart2:hover {
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -227,8 +247,7 @@ body .main-menu h2 {
   .restaurants .card span {
     background-color: #99E2D0;
     color: #1f866c;
-    padding-right: 15px;
-    height: 35px;
+    padding: 8px 15px;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -307,7 +326,7 @@ body .main-menu h2 {
   .main-menu .menu .title-heart .heart2 {
     opacity: 0;
   }
-  .main-menu .menu .title-heart .heart2:active {
+  .main-menu .menu .title-heart .heart2:hover {
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -324,14 +343,16 @@ body .main-menu h2 {
   }
   .main-menu .menu h3 {
     font-weight: 300;
-    margin-bottom: 5px;
-    padding-left: 25px;
+    padding: 0px 0px 8px 25px;
+    position: relative;
   }
-  .main-menu .menu .underline-title {
-    width: 50px;
+  .main-menu .menu h3::before {
+    position: absolute;
+    top: 30px;
+    width: 45px;
     height: 3px;
     background-color: #99E2D0;
-    margin-left: 25px;
+    content: "";
   }
   .main-menu .menu #button-order {
     text-decoration: none;
@@ -340,8 +361,13 @@ body .main-menu h2 {
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     font-size: 1em;
+    box-shadow: 0px 4px 8px 3px #c9c7c7;
     width: 40%;
     text-align: center;
+  }
+  .main-menu .menu #button-order:hover {
+    filter: brightness(150%);
+    box-shadow: 0px 4px 8px 3px #525050;
   }
   .main-menu .menu .button-order {
     display: flex;
@@ -351,8 +377,10 @@ body .main-menu h2 {
   .main-menu .menu .flat {
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 8px 20px 0px #c9c7c7;
     margin-left: 15px;
     margin-right: 15px;
+    position: relative;
   }
   .main-menu .menu .flat h4 {
     font-size: 1.2em;
@@ -361,13 +389,89 @@ body .main-menu h2 {
   }
   .main-menu .menu .flat p {
     margin: 0px 0px 0px 20px;
+    padding-bottom: 20px;
     font-size: 0.95em;
   }
   .main-menu .menu .flat span {
     font-weight: bold;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+  }
+}
+/* Pour mobiles */
+@media screen and (max-width: 767px) {
+  #loading-spinner {
+    position: fixed;
+    left: 22%;
+    top: 40%;
+    z-index: 1;
+    opacity: 0.7;
+  }
+  #loading-spinner .loader {
+    display: flex;
+    animation-name: time-animation;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+  }
+  #loading-spinner .loader .load-primary, #loading-spinner .loader .load-tertiary2, #loading-spinner .loader .load-tertiary, #loading-spinner .loader .load-secondary2, #loading-spinner .loader .load-secondary, #loading-spinner .loader .load-primary2 {
+    background-color: #9356DC;
+    width: 15px;
+    height: 100px;
+    margin-left: 20px;
+    animation-name: loading-spinner;
+    animation-duration: 1s;
+    animation-delay: 166ms;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  #loading-spinner .loader .load-primary2 {
+    animation-delay: 333ms;
+  }
+  #loading-spinner .loader .load-secondary {
+    background-color: #FF79DA;
+    animation-delay: 499ms;
+  }
+  #loading-spinner .loader .load-secondary2 {
+    background-color: #FF79DA;
+    animation-delay: 666ms;
+  }
+  #loading-spinner .loader .load-tertiary {
+    background-color: #99E2D0;
+    animation-delay: 832ms;
+  }
+  #loading-spinner .loader .load-tertiary2 {
+    background-color: #99E2D0;
+    animation-delay: 1000ms;
+  }
+  @keyframes loading-spinner {
+    0% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes time-animation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+/* Pour mobiles */
+@media screen and (max-width: 767px) {
+  .card {
     position: relative;
-    left: 300px;
-    bottom: 18px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 8px 0px #c9c7c7;
+    margin: 20px;
   }
 }
 

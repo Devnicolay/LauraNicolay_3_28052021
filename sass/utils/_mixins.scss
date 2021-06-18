@@ -6,6 +6,14 @@
     background: linear-gradient($secondary-color, $primary-color);
     color: white;
     font-size: 1em;
+    box-shadow: 0px 4px 8px 3px #c9c7c7;
+}
+
+
+@mixin button-lightness 
+{
+    filter: brightness(150%);
+    box-shadow: 0px 4px 8px 3px #525050;
 }
 
 
@@ -27,4 +35,15 @@
             opacity: 1;
         }
     }
+}
+
+
+@mixin underline-green 
+{
+    position: absolute;
+    top: 30px;
+    width: 45px;
+    height: 3px;
+    background-color: $tertiary-color;
+    content: "";
 }
