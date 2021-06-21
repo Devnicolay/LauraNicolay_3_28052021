@@ -54,8 +54,9 @@
     p 
     {
         animation-name: ellipsis-flat;
-        animation-duration: 0.7s;
+        animation-duration: 2s;
         width: 50%;
+        animation-fill-mode: forwards;
     }
 
     @keyframes ellipsis-flat 
@@ -73,7 +74,8 @@
     span 
     {
         animation-name: slide-price;
-        animation-duration: 0.7s;
+        animation-duration: 2s;
+        animation-fill-mode: both;
     }
 
     @keyframes slide-price 
@@ -88,34 +90,59 @@
         }
     }
 
-    i 
+
+    .i-background
     {
         width: 60px;
         height: 100%;
+        background-color: $tertiary-color;
         border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation-name: slide-left-background;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slide-left-background 
+    {
+        0%
+        {
+            transform: translateX(200%);
+        }
+        100%
+        {
+            transform: translateX(0%);
+        }
+    }
+
+    i 
+    {
         color: white;
         background-color: $tertiary-color;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 0px;
-        bottom: 0px;
+        right: 13px;
+        bottom: 25px;
+        z-index: 2;
         animation-name: slide-left;
-        animation-duration: 0.7s;
+        animation-duration: 2s;
+        animation-delay: 0.38s;
+        animation-fill-mode: both;
     }
 
     @keyframes slide-left 
     {
         0%
         {
-            transform: translateX(0);
-            transform: rotate(0deg);
+            transform: translateX(200%) rotate(0deg);
         }
         100%
         {
-            transform: translateX(-50px);
-            transform: rotate(360deg);
+            transform: translateX(0%) rotate(360deg);
         }
     }
 }

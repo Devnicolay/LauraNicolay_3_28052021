@@ -133,7 +133,7 @@
 
             .flat:hover
             {
-                @include animation-flat
+                @include animation-flat;
             }
         }
     }
