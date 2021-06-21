@@ -107,7 +107,6 @@ body {
   color: #4f02ac;
 }
 
-/* Pour tablettes */
 /* Pour mobiles */
 #company-presentation {
   padding: 20px 0px;
@@ -166,7 +165,6 @@ body {
   color: #9356DC;
 }
 
-/* Pour tablettes */
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   #company-presentation {
@@ -256,6 +254,13 @@ body {
 }
 
 /* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .card {
+    margin: 3em 1.5em;
+    box-shadow: 4px 4px 8px 0px #c9c7c7;
+    border-radius: 20px;
+  }
+}
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   .restaurants {
@@ -606,6 +611,12 @@ footer .fa-hands-helping {
   }
 }
 
+/* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  #loading-spinner {
+    left: 35%;
+  }
+}
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   #loading-spinner {

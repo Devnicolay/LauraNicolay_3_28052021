@@ -99,6 +99,24 @@
 
 
 
+/* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 992px)
+{
+    #loading-spinner
+    {
+        left: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* Pour desktop */
 @media screen and (min-width: 992px) 
 {
