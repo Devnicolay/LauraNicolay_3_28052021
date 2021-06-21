@@ -1,48 +1,62 @@
 /* Pour mobiles */
-@media screen and (max-width: 767px) 
+footer
 {
-    footer
+    color: white;
+    background-color: rgb(59, 58, 58);
+    height: 200px;
+
+    ul
     {
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 0px;
+    }
+
+    li
+    {
+        margin-bottom: 10px;
+    }
+
+    h2
+    {
+        font-family: shrikhand;
+        font-size: 1.5em;
+        display: inline-block;
+        margin: 20px 0px 15px 0px;
+    }
+
+    a:link
+    {
+        text-decoration: none;
         color: white;
-        background-color: rgb(59, 58, 58);
-        height: 200px;
+    }
 
-        ul
-        {
-            list-style: none;
-            padding-left: 20px;
-            margin-top: 0px;
-        }
-
-        li
-        {
-            margin-bottom: 10px;
-        }
-
-        h2
-        {
-            font-family: shrikhand;
-            font-size: 1.5em;
-            display: inline-block;
-            margin: 20px 0px 15px 0px;
-        }
-
-        a:link
-        {
-            text-decoration: none;
-            color: white;
-        }
-
-        .fa-utensils
-        {
-            margin-right: 17px;
-            color: white;
-        }
+    .fa-utensils
+    {
+        margin-right: 17px;
+        color: white;
+    }
         
-        .fa-hands-helping
-        {
-            margin-right: 10px;
-            color: white;
-        }
+    .fa-hands-helping
+    {
+        margin-right: 10px;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 992px) 
+{
+    footer 
+    {
+        margin: 0em 3.4em;
     }
 }

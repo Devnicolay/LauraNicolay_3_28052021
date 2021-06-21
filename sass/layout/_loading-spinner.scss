@@ -1,94 +1,109 @@
 /* Pour mobiles */
-@media screen and (max-width: 767px) 
+#loading-spinner
+{
+    position: fixed;
+    left: 22%;
+    top: 40%;
+    z-index: 1;
+    opacity: 0.7;
+
+    .loader
+    {
+        display: flex;
+        animation-name: time-animation;
+        animation-duration: 1s;
+        animation-delay: 6s;
+        animation-fill-mode: both;
+
+        .load-primary
+        {
+            background-color: $primary-color;
+            width: 15px;
+            height: 100px;
+            margin-left: 20px;
+            animation-name: loading-spinner;
+            animation-duration: 1s;
+            animation-delay: 166ms;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        .load-primary2
+        {
+            @extend .load-primary;
+            animation-delay: 333ms;
+        }
+
+        .load-secondary
+        {
+            background-color: $secondary-color;
+            @extend .load-primary;
+            animation-delay: 499ms;
+        }
+
+        .load-secondary2
+        {
+            background-color: $secondary-color;
+            @extend .load-primary;
+            animation-delay: 666ms;
+        }
+
+        .load-tertiary
+        {
+            background-color: $tertiary-color;
+            @extend .load-primary;
+            animation-delay: 832ms;
+        }
+
+        .load-tertiary2
+        {
+            background-color: $tertiary-color;
+            @extend .load-primary;
+            animation-delay: 1000ms;
+        }
+    }
+
+    @keyframes loading-spinner 
+    {
+        0%
+        {
+            transform: scaleY(0.5);
+        }
+        100%
+        {
+            transform: scaleY(1);
+        }
+    }
+
+    @keyframes time-animation 
+    {
+        0%
+        {
+            opacity: 1;
+        }
+        100%
+        {
+            opacity: 0;
+        }
+            
+    }       
+}
+
+
+
+
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 992px) 
 {
     #loading-spinner
     {
-        position: fixed;
-        left: 22%;
-        top: 40%;
-        z-index: 1;
-        opacity: 0.7;
-
-        .loader
-        {
-            display: flex;
-            animation-name: time-animation;
-            animation-duration: 1s;
-            animation-delay: 6s;
-            animation-fill-mode: both;
-
-            .load-primary
-            {
-                background-color: $primary-color;
-                width: 15px;
-                height: 100px;
-                margin-left: 20px;
-                animation-name: loading-spinner;
-                animation-duration: 1s;
-                animation-delay: 166ms;
-                animation-fill-mode: backwards;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-timing-function: ease-in-out;
-            }
-
-            .load-primary2
-            {
-                @extend .load-primary;
-                animation-delay: 333ms;
-            }
-
-            .load-secondary
-            {
-                background-color: $secondary-color;
-                @extend .load-primary;
-                animation-delay: 499ms;
-            }
-
-            .load-secondary2
-            {
-                background-color: $secondary-color;
-                @extend .load-primary;
-                animation-delay: 666ms;
-            }
-
-            .load-tertiary
-            {
-                background-color: $tertiary-color;
-                @extend .load-primary;
-                animation-delay: 832ms;
-            }
-
-            .load-tertiary2
-            {
-                background-color: $tertiary-color;
-                @extend .load-primary;
-                animation-delay: 1000ms;
-            }
-        }
-        @keyframes loading-spinner 
-        {
-            0%
-            {
-                transform: scaleY(0.5);
-            }
-            100%
-            {
-                transform: scaleY(1);
-            }
-        }
-        @keyframes time-animation 
-        {
-            0%
-            {
-                opacity: 1;
-            }
-            100%
-            {
-                opacity: 0;
-            }
-            
-        }
-        
+        left: 42%;
     }
 }

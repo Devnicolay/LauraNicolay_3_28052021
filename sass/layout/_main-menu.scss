@@ -1,141 +1,166 @@
 /* Pour mobiles */
-@media screen and (max-width: 767px) 
+.main-menu
 {
-    .main-menu
+    img
     {
-        img
+        object-fit: cover;
+        height: 272px;
+        width: 100%;
+    }
+
+    .menu 
+    {
+        background-color: #f7f7f7;
+        border-radius: 50px 50px 0px 0px;
+        margin-top: -60px;
+        position: relative;
+        @include display-menu;
+
+        .title-heart
         {
-            object-fit: cover;
-            height: 272px;
-            width: 100%;
+            display: flex;
+
+            h2 
+            {
+                font-size: 2em;
+                margin: 10px 0px 40px 0px;
+                padding: 40px 0px 0px 25px;
+            }
+
+            .heart1, .heart2
+            {
+                position: absolute;
+                top: 52px;
+                right: 45px;
+            }
+
+            .heart1
+            {
+                color: black;
+            }
+
+            .heart2
+            {
+                opacity: 0;
+            }
+
+            .heart2:hover
+            {
+                @include animation-heart
+            }
         }
 
-        .menu 
+        h3 
         {
-            background-color: #f7f7f7;
-            border-radius: 50px 50px 0px 0px;
-            margin-top: -60px;
+            font-weight: 300;
+            padding: 0px 0px 8px 25px;
             position: relative;
-            @include display-menu;
+        }
 
-            .title-heart
-            {
-                display: flex;
+        h3::before
+        {
+            @include underline-green;
+        }
 
-                h2 
-                {
-                    font-size: 2em;
-                    margin: 10px 0px 40px 0px;
-                    padding: 40px 0px 0px 25px;
-                }
+        #button-order
+        {
+            @include button-gradient;
+            width: 40%;
+            text-align: center;
+        }
 
-                .heart1, .heart2
-                {
-                    position: absolute;
-                    top: 52px;
-                    right: 45px;
-                }
+        #button-order:hover
+        {
+            @include button-lightness;
+        }
 
-                .heart1
-                {
-                    color: black;
-                }
-
-                .heart2
-                {
-                    opacity: 0;
-                }
-
-                .heart2:hover
-                {
-                @include animation-heart
-                }
-            }
-
-            h3 
-            {
-                font-weight: 300;
-                padding: 0px 0px 8px 25px;
-                position: relative;
-            }
-
-            h3::before
-            {
-                @include underline-green;
-            }
-
-            #button-order
-            {
-                @include button-gradient;
-                width: 40%;
-                text-align: center;
-            }
-
-            #button-order:hover
-            {
-                @include button-lightness;
-            }
-
-            .button-order
-            {
-                display: flex;
-                justify-content: center;
-                padding: 60px 0px;
-            }
+        .button-order
+        {
+            display: flex;
+            justify-content: center;
+            padding: 60px 0px;
+        }
             
-            .flat:hover
+        .flat:hover
+        {
+            i 
             {
-                i 
-                {
-                    display: unset;
-                }
+                display: unset;
+            }
+        }
+
+        .flat
+        {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px 0px #c9c7c7;
+            margin-left: 15px;
+            margin-right: 15px;
+            position: relative;
+
+            h4 
+            {
+                font-size: 1.2em;
+                margin: 21px 0px 5px 20px;
+                padding-top: 15px;
             }
 
-            .flat
+            p 
             {
-                background-color: white;
-                border-radius: 20px;
-                box-shadow: 0px 8px 20px 0px #c9c7c7;
-                margin-left: 15px;
-                margin-right: 15px;
-                position: relative;
-
-                h4 
-                {
-                    font-size: 1.2em;
-                    margin: 21px 0px 5px 20px;
-                    padding-top: 15px;
-                }
-
-                p 
-                {
-                    margin: 0px 0px 0px 20px;
-                    padding-bottom: 20px;
-                    font-size: 0.95em;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    width: 70%;
-                    white-space: nowrap;
-                }
-
-                span 
-                {
-                    font-weight: bold;
-                    position: absolute;
-                    right: 30px;
-                    bottom: 20px;
-                }
-
-                i 
-                {
-                    display: none;
-                }
+                margin: 0px 0px 0px 20px;
+                padding-bottom: 20px;
+                font-size: 0.95em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 70%;
+                white-space: nowrap;
             }
 
-            .flat:hover
+            span 
             {
-                @include animation-flat;
+                font-weight: bold;
+                position: absolute;
+                right: 30px;
+                bottom: 20px;
             }
+
+            i 
+            {
+                display: none;
+            }
+        }
+
+        .flat:hover
+        {
+            @include animation-flat;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 992px) 
+{
+    .main-menu 
+    {
+        margin: 0em 3.4em;
+    }
+}
+
+
+
+
+
+
+
+
+
+

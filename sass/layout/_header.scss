@@ -1,19 +1,16 @@
 /* Pour mobiles */
-@media screen and (max-width: 767px) 
+header
 {
-    header
+    h1
     {
-        h1
-        {
-            color: black;
-            text-align: center;
-            font-size: 2.5em;
-            margin: 20px 0px 10px 0px;
-        }
+        color: black;
+        text-align: center;
+        font-size: 2.5em;
+        margin: 20px 0px 10px 0px;
+    }
         
-        a:link
-        {
-            text-decoration: none;
-        }
+    a:link
+    {
+        text-decoration: none;
     }
 }

@@ -1,56 +1,53 @@
 /* Pour mobiles */
-@media screen and (max-width: 767px) 
+#localization 
 {
-    #localization 
+    text-align: center;
+    background: linear-gradient(white, #e7e6e6);
+    height: 300px;
+        
+    form
+    {
+        background-color: #F2F2F2;
+        box-shadow: 0px 15px 8px -10px #c9c7c7 inset;
+        display: flex;
+        justify-content: center;
+
+        #input-search 
+        {
+            background-color: transparent;
+            border: none;
+        }
+
+        #input-search::placeholder
+        {
+            color: black;
+        }
+    }
+
+    h2, p
     {
         text-align: center;
-        background: linear-gradient(white, #e7e6e6);
-        height: 300px;
-        
-        form
-        {
-            background-color: #F2F2F2;
-            box-shadow: 0px 15px 8px -10px #c9c7c7 inset;
-            display: flex;
-            justify-content: center;
+    }
 
-            #input-search 
-            {
-                background-color: transparent;
-                border: none;
-            }
+    h2 
+    {
+    margin: 40px 50px 0px 50px;
+    }
 
-            #input-search::placeholder
-            {
-                color: black;
-            }
-        }
+    p 
+    {
+    margin: 20px 30px 30px 30px;
+    color: gray;
+    }
 
-        h2, p
-        {
-            text-align: center;
-        }
+    #button_restaurant 
+    {
+        @include button-gradient;
+    }
 
-        h2 
-        {
-        margin: 40px 50px 0px 50px;
-        }
-
-        p 
-        {
-        margin: 20px 30px 30px 30px;
-        color: gray;
-        }
-
-        #button_restaurant 
-        {
-            @include button-gradient;
-        }
-
-        #button_restaurant:hover
-        {
-            @include button-lightness;
-        }
+    #button_restaurant:hover
+    {
+        @include button-lightness;
     }
 }
 
@@ -62,7 +59,7 @@
 
 
 /* Pour tablettes */
-@media screen and (min-width: 767px) and (max-width: 1024px)
+@media screen and (min-width: 767px) and (max-width: 992px)
 {
 
 
@@ -76,14 +73,15 @@
 
 
 
-/* Pour desktop */
-@media screen and (min-width: 1024px) 
-{
-
-    body
-    {
-        max-width: 1450px;
-    }
 
 
-}
+
+
+
+
+
+   
+
+    
+
+
