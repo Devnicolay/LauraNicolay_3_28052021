@@ -307,6 +307,43 @@ body .main-menu h2 {
     margin-top: -60px;
     position: relative;
   }
+  .main-menu .menu .flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
+    animation-name: display;
+    animation-duration: 3s;
+    animation-delay: 100ms;
+  }
+  @keyframes display {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .main-menu .menu #delay-starter-2 {
+    animation-delay: 322ms;
+  }
+  .main-menu .menu #delay-starter-3 {
+    animation-delay: 644ms;
+  }
+  .main-menu .menu #delay-flat-1 {
+    animation-delay: 966ms;
+  }
+  .main-menu .menu #delay-flat-2 {
+    animation-delay: 1288ms;
+  }
+  .main-menu .menu #delay-flat-3 {
+    animation-delay: 1610ms;
+  }
+  .main-menu .menu #delay-dessert-1 {
+    animation-delay: 1932ms;
+  }
+  .main-menu .menu #delay-dessert-2 {
+    animation-delay: 2254ms;
+  }
+  .main-menu .menu #delay-dessert-3 {
+    animation-delay: 2576ms;
+  }
   .main-menu .menu .title-heart {
     display: flex;
   }
@@ -374,10 +411,10 @@ body .main-menu h2 {
     justify-content: center;
     padding: 60px 0px;
   }
-  .main-menu .menu .flat:hover i {
+  .main-menu .menu .flat:hover i, .main-menu .menu #delay-starter-2:hover i, .main-menu .menu #delay-starter-3:hover i, .main-menu .menu #delay-flat-1:hover i, .main-menu .menu #delay-flat-2:hover i, .main-menu .menu #delay-flat-3:hover i, .main-menu .menu #delay-dessert-1:hover i, .main-menu .menu #delay-dessert-2:hover i, .main-menu .menu #delay-dessert-3:hover i {
     display: unset;
   }
-  .main-menu .menu .flat {
+  .main-menu .menu .flat, .main-menu .menu #delay-starter-2, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-3 {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 8px 20px 0px #c9c7c7;
@@ -385,12 +422,12 @@ body .main-menu h2 {
     margin-right: 15px;
     position: relative;
   }
-  .main-menu .menu .flat h4 {
+  .main-menu .menu .flat h4, .main-menu .menu #delay-starter-2 h4, .main-menu .menu #delay-starter-3 h4, .main-menu .menu #delay-flat-1 h4, .main-menu .menu #delay-flat-2 h4, .main-menu .menu #delay-flat-3 h4, .main-menu .menu #delay-dessert-1 h4, .main-menu .menu #delay-dessert-2 h4, .main-menu .menu #delay-dessert-3 h4 {
     font-size: 1.2em;
     margin: 21px 0px 5px 20px;
     padding-top: 15px;
   }
-  .main-menu .menu .flat p {
+  .main-menu .menu .flat p, .main-menu .menu #delay-starter-2 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-3 p {
     margin: 0px 0px 0px 20px;
     padding-bottom: 20px;
     font-size: 0.95em;
@@ -399,16 +436,16 @@ body .main-menu h2 {
     width: 70%;
     white-space: nowrap;
   }
-  .main-menu .menu .flat span {
+  .main-menu .menu .flat span, .main-menu .menu #delay-starter-2 span, .main-menu .menu #delay-starter-3 span, .main-menu .menu #delay-flat-1 span, .main-menu .menu #delay-flat-2 span, .main-menu .menu #delay-flat-3 span, .main-menu .menu #delay-dessert-1 span, .main-menu .menu #delay-dessert-2 span, .main-menu .menu #delay-dessert-3 span {
     font-weight: bold;
     position: absolute;
     right: 30px;
     bottom: 20px;
   }
-  .main-menu .menu .flat i {
+  .main-menu .menu .flat i, .main-menu .menu #delay-starter-2 i, .main-menu .menu #delay-starter-3 i, .main-menu .menu #delay-flat-1 i, .main-menu .menu #delay-flat-2 i, .main-menu .menu #delay-flat-3 i, .main-menu .menu #delay-dessert-1 i, .main-menu .menu #delay-dessert-2 i, .main-menu .menu #delay-dessert-3 i {
     display: none;
   }
-  .main-menu .menu .flat:hover p {
+  .main-menu .menu .flat:hover p, .main-menu .menu #delay-starter-2:hover p, .main-menu .menu #delay-starter-3:hover p, .main-menu .menu #delay-flat-1:hover p, .main-menu .menu #delay-flat-2:hover p, .main-menu .menu #delay-flat-3:hover p, .main-menu .menu #delay-dessert-1:hover p, .main-menu .menu #delay-dessert-2:hover p, .main-menu .menu #delay-dessert-3:hover p {
     animation-name: ellipsis-flat;
     animation-duration: 2s;
     width: 50%;
@@ -422,7 +459,7 @@ body .main-menu h2 {
       transform: 40%;
     }
   }
-  .main-menu .menu .flat:hover span {
+  .main-menu .menu .flat:hover span, .main-menu .menu #delay-starter-2:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-3:hover span {
     animation-name: slide-price;
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -435,7 +472,7 @@ body .main-menu h2 {
       transform: translateX(-100px);
     }
   }
-  .main-menu .menu .flat:hover .i-background {
+  .main-menu .menu .flat:hover .i-background, .main-menu .menu #delay-starter-2:hover .i-background, .main-menu .menu #delay-starter-3:hover .i-background, .main-menu .menu #delay-flat-1:hover .i-background, .main-menu .menu #delay-flat-2:hover .i-background, .main-menu .menu #delay-flat-3:hover .i-background, .main-menu .menu #delay-dessert-1:hover .i-background, .main-menu .menu #delay-dessert-2:hover .i-background, .main-menu .menu #delay-dessert-3:hover .i-background {
     width: 60px;
     height: 100%;
     background-color: #99E2D0;
@@ -455,7 +492,7 @@ body .main-menu h2 {
       transform: translateX(0%);
     }
   }
-  .main-menu .menu .flat:hover i {
+  .main-menu .menu .flat:hover i, .main-menu .menu #delay-starter-2:hover i, .main-menu .menu #delay-starter-3:hover i, .main-menu .menu #delay-flat-1:hover i, .main-menu .menu #delay-flat-2:hover i, .main-menu .menu #delay-flat-3:hover i, .main-menu .menu #delay-dessert-1:hover i, .main-menu .menu #delay-dessert-2:hover i, .main-menu .menu #delay-dessert-3:hover i {
     color: white;
     background-color: #99E2D0;
     display: flex;

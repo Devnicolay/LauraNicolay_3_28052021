@@ -146,3 +146,71 @@
         }
     }
 }
+
+
+@mixin display-menu 
+{
+    .flat
+    {
+        animation-name: display;
+        animation-duration: 3s;
+        animation-delay: 100ms;
+    }
+    @keyframes display 
+    {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+
+    #delay-starter-2
+    {
+        @extend .flat;
+        animation-delay: 322ms;
+    }
+
+    #delay-starter-3
+    {
+        @extend .flat;
+        animation-delay: 644ms;
+    }
+
+    #delay-flat-1
+    {
+        @extend .flat;
+        animation-delay: 966ms;
+    }
+
+    #delay-flat-2
+    {
+        @extend .flat;
+        animation-delay: 1288ms;
+    }
+
+    #delay-flat-3
+    {
+        @extend .flat;
+        animation-delay: 1610ms;
+    }
+
+    #delay-dessert-1
+    {
+        @extend .flat;
+        animation-delay: 1932ms;
+    }
+
+    #delay-dessert-2
+    {
+        @extend .flat;
+        animation-delay: 2254ms;
+    }
+
+    #delay-dessert-3
+    {
+        @extend .flat;
+        animation-delay: 2576ms;
+    }
+}
