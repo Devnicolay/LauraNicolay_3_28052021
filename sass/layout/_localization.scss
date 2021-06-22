@@ -12,13 +12,13 @@
         display: flex;
         justify-content: center;
 
-        #input-search 
+        #search 
         {
             background-color: transparent;
             border: none;
         }
 
-        #input-search::placeholder
+        #search::placeholder
         {
             color: black;
         }
