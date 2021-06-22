@@ -481,7 +481,7 @@ footer .fa-hands-helping {
     width: 70%;
   }
   100% {
-    transform: 40%;
+    width: 40%;
   }
 }
 .main-menu .menu .flat:hover span, .main-menu .menu #delay-starter-2:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-3:hover span {
