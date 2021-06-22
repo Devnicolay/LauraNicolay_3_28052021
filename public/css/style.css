@@ -389,7 +389,7 @@ footer .fa-hands-helping {
 }
 .main-menu .menu .title-heart h2 {
   font-size: 2em;
-  margin: 10px 0px 40px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 40px 0px 0px 25px;
 }
 .main-menu .menu .title-heart .heart1, .main-menu .menu .title-heart .heart2 {
@@ -422,6 +422,7 @@ footer .fa-hands-helping {
   font-weight: 300;
   padding: 0px 0px 8px 25px;
   position: relative;
+  margin-top: 40px;
 }
 .main-menu .menu h3::before {
   position: absolute;
