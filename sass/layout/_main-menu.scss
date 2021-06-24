@@ -42,11 +42,11 @@
             .heart2
             {
                 opacity: 0;
-            }
 
-            .heart2:hover
-            {
-                @include animation-heart
+                &:hover
+                {
+                    @include animation-heart;
+                }
             }
         }
 
@@ -68,11 +68,11 @@
             @include button-gradient;
             width: 40%;
             text-align: center;
-        }
 
-        #button-order:hover
-        {
-            @include button-lightness;
+            &:hover
+            {
+                @include button-lightness;
+            }
         }
 
         .button-order
@@ -129,11 +129,11 @@
             {
                 display: none;
             }
-        }
 
-        .flat:hover
-        {
-            @include animation-flat;
+            &:hover
+            {
+                @include animation-flat;
+            }
         }
     }
 }

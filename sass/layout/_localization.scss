@@ -43,11 +43,12 @@
     #button_restaurant 
     {
         @include button-gradient;
-    }
 
-    #button_restaurant:hover
-    {
-        @include button-lightness;
+        &:hover
+        {
+            @include button-lightness;
+        }
+
     }
 }
 

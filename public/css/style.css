@@ -230,7 +230,7 @@ body {
   opacity: 0;
 }
 .restaurants .card .heart2:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-name: remplissage;
@@ -406,7 +406,7 @@ footer .fa-hands-helping {
   opacity: 0;
 }
 .main-menu .menu .title-heart .heart2:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-name: remplissage;

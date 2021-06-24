@@ -58,11 +58,11 @@
         .heart2
         {
             opacity: 0;
-        }
 
-        .heart2:hover
-        {
-        @include animation-heart
+            &:hover
+            {
+                @include animation-heart
+            }
         }
             
         span
