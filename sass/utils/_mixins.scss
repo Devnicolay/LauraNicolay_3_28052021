@@ -21,10 +21,12 @@
 @mixin animation-heart 
 {
     background: -webkit-linear-gradient($primary-color, $secondary-color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation-name: remplissage;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-fill-mode: both;
     @keyframes remplissage 
     {
         0%

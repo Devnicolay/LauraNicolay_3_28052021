@@ -233,8 +233,10 @@ body {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-name: remplissage;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: both;
 }
 @keyframes remplissage {
   0% {
@@ -407,8 +409,10 @@ footer .fa-hands-helping {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-name: remplissage;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: both;
 }
 @keyframes remplissage {
   0% {
