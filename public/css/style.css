@@ -74,6 +74,7 @@ body {
   box-shadow: 0px 15px 8px -10px #c9c7c7 inset;
   display: flex;
   justify-content: center;
+  padding: 8px 0px;
 }
 #localization form #search {
   background-color: transparent;
@@ -81,6 +82,7 @@ body {
 }
 #localization form #search::placeholder {
   color: black;
+  font-weight: bold;
 }
 #localization h2, #localization p {
   text-align: center;
@@ -253,6 +255,7 @@ body {
   position: absolute;
   right: 15px;
   top: 15px;
+  border-radius: 5px;
 }
 
 /* Pour tablettes */
