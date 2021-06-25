@@ -81,60 +81,6 @@
             justify-content: center;
             padding: 60px 0px;
         }
-            
-        .flat:hover
-        {
-            i 
-            {
-                display: unset;
-            }
-        }
-
-        .flat
-        {
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0px 8px 20px 0px #c9c7c7;
-            margin: 0px 15px 15px 15px;
-            position: relative;
-            overflow: hidden;
-
-            h4 
-            {
-                font-size: 1.2em;
-                margin: 0px 0px 5px 20px;
-                padding-top: 15px;
-            }
-
-            p 
-            {
-                margin: 0px 0px 0px 20px;
-                padding-bottom: 20px;
-                font-size: 0.95em;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 70%;
-                white-space: nowrap;
-            }
-
-            span 
-            {
-                font-weight: bold;
-                position: absolute;
-                right: 30px;
-                bottom: 20px;
-            }
-
-            i 
-            {
-                display: none;
-            }
-
-            &:hover
-            {
-                @include animation-flat;
-            }
-        }
     }
 }
 
