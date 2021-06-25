@@ -195,16 +195,16 @@ body {
   margin-left: 20px;
 }
 #company-presentation ol {
-  counter-reset: my-counter;
+  counter-reset: number-operation;
   list-style: none;
   padding-left: 0px;
 }
 #company-presentation ol li {
-  counter-increment: my-counter;
+  counter-increment: number-operation;
   position: relative;
 }
 #company-presentation ol li::before {
-  content: counter(my-counter);
+  content: counter(number-operation);
   background-color: #9356DC;
   color: white;
   width: 30px;
@@ -248,7 +248,7 @@ body {
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   #company-presentation {
-    margin: 0em 3.4em;
+    margin: 0px 60px;
   }
   #company-presentation .fonction {
     margin-left: 0px;
@@ -286,7 +286,7 @@ body {
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   .restaurants {
-    margin: 0em 3.4em;
+    margin: 0px 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
@@ -377,7 +377,7 @@ body {
 /* Pour tablettes */
 @media screen and (min-width: 767px) and (max-width: 992px) {
   .restaurants article {
-    margin: 3em 1.5em;
+    margin: 60px 25px;
   }
 }
 /* Pour les cartes restaurants de la page d'accueil */
@@ -388,7 +388,7 @@ body {
   }
 }
 /* Pour les cartes plat des pages restaurant */
-.flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
+.flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 8px 20px 0px #c9c7c7;
@@ -396,31 +396,31 @@ body {
   position: relative;
   overflow: hidden;
 }
-.flat h4, .main-menu .menu #delay-dessert-3 h4, .main-menu .menu #delay-dessert-2 h4, .main-menu .menu #delay-dessert-1 h4, .main-menu .menu #delay-flat-3 h4, .main-menu .menu #delay-flat-2 h4, .main-menu .menu #delay-flat-1 h4, .main-menu .menu #delay-starter-3 h4, .main-menu .menu #delay-starter-2 h4 {
+.flat h4, .main-menu .menu #delay-dessert-3 h4, .main-menu .menu #delay-dessert-2 h4, .main-menu .menu #delay-dessert-1 h4, .main-menu .menu #delay-flat-3 h4, .main-menu .menu #delay-flat-2 h4, .main-menu .menu #delay-flat-1 h4, .main-menu .menu #delay-starter-4 h4, .main-menu .menu #delay-starter-3 h4, .main-menu .menu #delay-starter-2 h4 {
   font-size: 1.2em;
   margin: 0px 0px 5px 20px;
   padding-top: 15px;
 }
-.flat p, .main-menu .menu #delay-dessert-3 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-starter-2 p {
+.flat p, .main-menu .menu #delay-dessert-3 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-starter-4 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-starter-2 p {
   margin: 0px 0px 0px 20px;
   padding-bottom: 20px;
   font-size: 0.95em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 70%;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 70%;
 }
-.flat span, .main-menu .menu #delay-dessert-3 span, .main-menu .menu #delay-dessert-2 span, .main-menu .menu #delay-dessert-1 span, .main-menu .menu #delay-flat-3 span, .main-menu .menu #delay-flat-2 span, .main-menu .menu #delay-flat-1 span, .main-menu .menu #delay-starter-3 span, .main-menu .menu #delay-starter-2 span {
+.flat span, .main-menu .menu #delay-dessert-3 span, .main-menu .menu #delay-dessert-2 span, .main-menu .menu #delay-dessert-1 span, .main-menu .menu #delay-flat-3 span, .main-menu .menu #delay-flat-2 span, .main-menu .menu #delay-flat-1 span, .main-menu .menu #delay-starter-4 span, .main-menu .menu #delay-starter-3 span, .main-menu .menu #delay-starter-2 span {
   font-weight: bold;
   position: absolute;
   right: 30px;
   bottom: 20px;
 }
-.flat i, .main-menu .menu #delay-dessert-3 i, .main-menu .menu #delay-dessert-2 i, .main-menu .menu #delay-dessert-1 i, .main-menu .menu #delay-flat-3 i, .main-menu .menu #delay-flat-2 i, .main-menu .menu #delay-flat-1 i, .main-menu .menu #delay-starter-3 i, .main-menu .menu #delay-starter-2 i {
+.flat i, .main-menu .menu #delay-dessert-3 i, .main-menu .menu #delay-dessert-2 i, .main-menu .menu #delay-dessert-1 i, .main-menu .menu #delay-flat-3 i, .main-menu .menu #delay-flat-2 i, .main-menu .menu #delay-flat-1 i, .main-menu .menu #delay-starter-4 i, .main-menu .menu #delay-starter-3 i, .main-menu .menu #delay-starter-2 i {
   display: none;
 }
 @media screen and (max-width: 495px) {
-  .flat:hover p, .main-menu .menu #delay-dessert-3:hover p, .main-menu .menu #delay-dessert-2:hover p, .main-menu .menu #delay-dessert-1:hover p, .main-menu .menu #delay-flat-3:hover p, .main-menu .menu #delay-flat-2:hover p, .main-menu .menu #delay-flat-1:hover p, .main-menu .menu #delay-starter-3:hover p, .main-menu .menu #delay-starter-2:hover p {
+  .flat:hover p, .main-menu .menu #delay-dessert-3:hover p, .main-menu .menu #delay-dessert-2:hover p, .main-menu .menu #delay-dessert-1:hover p, .main-menu .menu #delay-flat-3:hover p, .main-menu .menu #delay-flat-2:hover p, .main-menu .menu #delay-flat-1:hover p, .main-menu .menu #delay-starter-4:hover p, .main-menu .menu #delay-starter-3:hover p, .main-menu .menu #delay-starter-2:hover p {
     animation-name: ellipsis-flat;
     animation-duration: 2s;
     width: 50%;
@@ -435,7 +435,7 @@ body {
     }
   }
 }
-.flat:hover span, .main-menu .menu #delay-dessert-3:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-starter-2:hover span {
+.flat:hover span, .main-menu .menu #delay-dessert-3:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-starter-4:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-starter-2:hover span {
   animation-name: slide-price;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -448,7 +448,7 @@ body {
     transform: translateX(-100px);
   }
 }
-.flat:hover .i-background, .main-menu .menu #delay-dessert-3:hover .i-background, .main-menu .menu #delay-dessert-2:hover .i-background, .main-menu .menu #delay-dessert-1:hover .i-background, .main-menu .menu #delay-flat-3:hover .i-background, .main-menu .menu #delay-flat-2:hover .i-background, .main-menu .menu #delay-flat-1:hover .i-background, .main-menu .menu #delay-starter-3:hover .i-background, .main-menu .menu #delay-starter-2:hover .i-background {
+.flat:hover .i-background, .main-menu .menu #delay-dessert-3:hover .i-background, .main-menu .menu #delay-dessert-2:hover .i-background, .main-menu .menu #delay-dessert-1:hover .i-background, .main-menu .menu #delay-flat-3:hover .i-background, .main-menu .menu #delay-flat-2:hover .i-background, .main-menu .menu #delay-flat-1:hover .i-background, .main-menu .menu #delay-starter-4:hover .i-background, .main-menu .menu #delay-starter-3:hover .i-background, .main-menu .menu #delay-starter-2:hover .i-background {
   width: 60px;
   height: 100%;
   background-color: #99E2D0;
@@ -468,7 +468,7 @@ body {
     transform: translateX(0%);
   }
 }
-.flat:hover i, .main-menu .menu #delay-dessert-3:hover i, .main-menu .menu #delay-dessert-2:hover i, .main-menu .menu #delay-dessert-1:hover i, .main-menu .menu #delay-flat-3:hover i, .main-menu .menu #delay-flat-2:hover i, .main-menu .menu #delay-flat-1:hover i, .main-menu .menu #delay-starter-3:hover i, .main-menu .menu #delay-starter-2:hover i {
+.flat:hover i, .main-menu .menu #delay-dessert-3:hover i, .main-menu .menu #delay-dessert-2:hover i, .main-menu .menu #delay-dessert-1:hover i, .main-menu .menu #delay-flat-3:hover i, .main-menu .menu #delay-flat-2:hover i, .main-menu .menu #delay-flat-1:hover i, .main-menu .menu #delay-starter-4:hover i, .main-menu .menu #delay-starter-3:hover i, .main-menu .menu #delay-starter-2:hover i {
   color: white;
   background-color: #99E2D0;
   display: flex;
@@ -527,7 +527,7 @@ footer .fa-hands-helping {
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   footer {
-    margin: 0em 3.4em;
+    margin: 0px 55px;
   }
 }
 /* Pour mobiles */
@@ -542,10 +542,11 @@ footer .fa-hands-helping {
   margin-top: -60px;
   position: relative;
 }
-.main-menu .menu .flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
+.main-menu .menu .flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
   animation-name: display;
   animation-duration: 3s;
   animation-delay: 100ms;
+  animation-fill-mode: both;
 }
 @keyframes display {
   0% {
@@ -560,6 +561,9 @@ footer .fa-hands-helping {
 }
 .main-menu .menu #delay-starter-3 {
   animation-delay: 644ms;
+}
+.main-menu .menu #delay-starter-4 {
+  animation-delay: 966ms;
 }
 .main-menu .menu #delay-flat-1 {
   animation-delay: 966ms;
@@ -638,6 +642,7 @@ footer .fa-hands-helping {
   font-size: 1em;
   box-shadow: 0px 4px 8px 3px #c9c7c7;
   width: 40%;
+  height: 20px;
   text-align: center;
 }
 .main-menu .menu #button-order:hover {
@@ -654,7 +659,38 @@ footer .fa-hands-helping {
 /* Pour desktop */
 @media screen and (min-width: 992px) {
   .main-menu {
-    margin: 0em 3.4em;
+    margin: 0px 60px;
+  }
+  .main-menu .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 200px;
+  }
+  .main-menu .menu .flat, .main-menu .menu #delay-starter-2, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-3 {
+    opacity: 0;
+  }
+  .main-menu .menu .title-heart {
+    grid-column-start: 1/3;
+    grid-row-start: 1;
+  }
+  .main-menu .menu .entrees {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .main-menu .menu .plats {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .main-menu .menu .desserts {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .main-menu .menu .button-order {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .main-menu img {
+    height: 500px;
   }
 }
 

@@ -5,6 +5,7 @@
         animation-name: display;
         animation-duration: 3s;
         animation-delay: 100ms;
+        animation-fill-mode: both;
     }
     @keyframes display 
     {
@@ -26,6 +27,12 @@
     {
         @extend .flat;
         animation-delay: 644ms;
+    }
+
+    #delay-starter-4
+    {
+        @extend .flat;
+        animation-delay: 966ms;
     }
 
     #delay-flat-1

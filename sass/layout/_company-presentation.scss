@@ -10,20 +10,20 @@
 
     ol 
     {
-        counter-reset: my-counter;
+        counter-reset: number-operation;
         list-style: none;
         padding-left: 0px;
     }
 
     ol li 
     {
-        counter-increment: my-counter;
+        counter-increment: number-operation;
         position: relative;
     }
 
     ol li::before
     {
-        content: counter(my-counter);
+        content: counter(number-operation);
         background-color: $primary-color;
         color: white;
         width: 30px;
@@ -91,7 +91,7 @@
 
     #company-presentation
     {
-        margin: 0em 3.4em;
+        margin: 0px 60px;
         
         .fonction
         {
