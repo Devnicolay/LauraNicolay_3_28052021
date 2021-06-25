@@ -5,6 +5,13 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 
+@import "./keyframes/animation-heart";
+@import "./keyframes/animation-flat-slide";
+@import "./keyframes/animation-display-menu";
+
+@import "./components/button";
+@import "./components/loading-spinner";
+
 @import "./layout/header";
 @import "./layout/header-menu";
 @import "./layout/localization";
@@ -13,9 +20,8 @@
 @import "./layout/cards";
 @import "./layout/footer";
 @import "./layout/main-menu";
-@import "./layout/loading-spinner";
 
-@import "./components/card";
+
 
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: shrikhand;
   src: url(polices/shrikhand/Shrikhand-Regular.ttf);
@@ -27,6 +28,83 @@ body .main-menu h2 {
 @media screen and (max-width: 1024px) {
   body {
     max-width: 1450px;
+  }
+}
+/* Le trait vert sous Entrées, Plats, Desserts des pages restaurants */
+/* Pour mobiles */
+#loading-spinner {
+  position: fixed;
+  left: 22%;
+  top: 40%;
+  z-index: 1;
+  opacity: 0.7;
+}
+#loading-spinner .loader {
+  display: flex;
+  animation-name: time-animation;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+}
+#loading-spinner .loader .load-primary, #loading-spinner .loader .load-tertiary2, #loading-spinner .loader .load-tertiary, #loading-spinner .loader .load-secondary2, #loading-spinner .loader .load-secondary, #loading-spinner .loader .load-primary2 {
+  background-color: #9356DC;
+  width: 15px;
+  height: 100px;
+  margin-left: 20px;
+  animation-name: loading-spinner;
+  animation-duration: 1s;
+  animation-delay: 166ms;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#loading-spinner .loader .load-primary2 {
+  animation-delay: 333ms;
+}
+#loading-spinner .loader .load-secondary {
+  background-color: #FF79DA;
+  animation-delay: 499ms;
+}
+#loading-spinner .loader .load-secondary2 {
+  background-color: #FF79DA;
+  animation-delay: 666ms;
+}
+#loading-spinner .loader .load-tertiary {
+  background-color: #99E2D0;
+  animation-delay: 832ms;
+}
+#loading-spinner .loader .load-tertiary2 {
+  background-color: #99E2D0;
+  animation-delay: 1000ms;
+}
+@keyframes loading-spinner {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes time-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Pour tablettes */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  #loading-spinner {
+    left: 35%;
+  }
+}
+/* Pour desktop */
+@media screen and (min-width: 992px) {
+  #loading-spinner {
+    left: 42%;
   }
 }
 /* Pour mobiles */
@@ -577,92 +655,6 @@ footer .fa-hands-helping {
 @media screen and (min-width: 992px) {
   .main-menu {
     margin: 0em 3.4em;
-  }
-}
-/* Pour mobiles */
-#loading-spinner {
-  position: fixed;
-  left: 22%;
-  top: 40%;
-  z-index: 1;
-  opacity: 0.7;
-}
-#loading-spinner .loader {
-  display: flex;
-  animation-name: time-animation;
-  animation-duration: 1s;
-  animation-delay: 6s;
-  animation-fill-mode: both;
-}
-#loading-spinner .loader .load-primary, #loading-spinner .loader .load-tertiary2, #loading-spinner .loader .load-tertiary, #loading-spinner .loader .load-secondary2, #loading-spinner .loader .load-secondary, #loading-spinner .loader .load-primary2 {
-  background-color: #9356DC;
-  width: 15px;
-  height: 100px;
-  margin-left: 20px;
-  animation-name: loading-spinner;
-  animation-duration: 1s;
-  animation-delay: 166ms;
-  animation-fill-mode: backwards;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-#loading-spinner .loader .load-primary2 {
-  animation-delay: 333ms;
-}
-#loading-spinner .loader .load-secondary {
-  background-color: #FF79DA;
-  animation-delay: 499ms;
-}
-#loading-spinner .loader .load-secondary2 {
-  background-color: #FF79DA;
-  animation-delay: 666ms;
-}
-#loading-spinner .loader .load-tertiary {
-  background-color: #99E2D0;
-  animation-delay: 832ms;
-}
-#loading-spinner .loader .load-tertiary2 {
-  background-color: #99E2D0;
-  animation-delay: 1000ms;
-}
-@keyframes loading-spinner {
-  0% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@keyframes time-animation {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* Pour tablettes */
-@media screen and (min-width: 767px) and (max-width: 992px) {
-  #loading-spinner {
-    left: 35%;
-  }
-}
-/* Pour desktop */
-@media screen and (min-width: 992px) {
-  #loading-spinner {
-    left: 42%;
-  }
-}
-/* Pour mobiles */
-@media screen and (max-width: 767px) {
-  .card {
-    position: relative;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 4px 4px 8px 0px #c9c7c7;
-    margin: 20px;
   }
 }
 
