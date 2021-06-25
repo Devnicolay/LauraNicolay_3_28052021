@@ -134,7 +134,7 @@ body {
 }
 #header-menu .fa-arrow-left {
   color: #3b3a3a;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 75px;
   font-size: 1.4em;
   position: absolute;
   left: 10px;
@@ -247,23 +247,32 @@ body {
 
 /* Pour desktop */
 @media screen and (min-width: 992px) {
-  #company-presentation {
+  #bloc-page {
+    max-width: 1450px;
+  }
+  #bloc-page #company-presentation {
     margin: 0px 60px;
   }
-  #company-presentation .fonction {
+  #bloc-page #company-presentation .fonction {
     margin-left: 0px;
     margin-right: 0px;
   }
-  #company-presentation ol {
+  #bloc-page #company-presentation ol {
     display: flex;
     justify-content: space-between;
   }
-  #company-presentation ol li::before {
+  #bloc-page #company-presentation ol li::before {
     left: -15px;
     top: 50px;
   }
-  #company-presentation li {
+  #bloc-page #company-presentation li {
     width: 30%;
+  }
+}
+/* Pour desktop grand format */
+@media screen and (min-width: 1450px) {
+  #bloc-page {
+    margin: auto;
   }
 }
 /* Pour mobiles */
@@ -524,12 +533,6 @@ footer .fa-hands-helping {
   color: white;
 }
 
-/* Pour desktop */
-@media screen and (min-width: 992px) {
-  footer {
-    margin: 0px 55px;
-  }
-}
 /* Pour mobiles */
 .main-menu img {
   object-fit: cover;
@@ -658,13 +661,11 @@ footer .fa-hands-helping {
 
 /* Pour desktop */
 @media screen and (min-width: 992px) {
-  .main-menu {
-    margin: 0px 60px;
-  }
   .main-menu .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr 200px;
+    margin: -60px 60px 0px 60px;
   }
   .main-menu .menu .flat, .main-menu .menu #delay-starter-2, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-3 {
     opacity: 0;

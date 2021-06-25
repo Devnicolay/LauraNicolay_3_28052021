@@ -88,34 +88,49 @@
 /* Pour desktop */
 @media screen and (min-width: 992px) 
 {
-
-    #company-presentation
+    #bloc-page
     {
-        margin: 0px 60px;
+        max-width: 1450px;
+
+        #company-presentation
+        {
+            margin: 0px 60px;
         
-        .fonction
-        {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+            .fonction
+            {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
 
-        ol 
-        {
-            display: flex;
-            justify-content: space-between;
-        }
+            ol 
+            {
+                display: flex;
+                justify-content: space-between;
+            }
 
-        ol li::before
-        {
-            left: -15px;
-            top: 50px;
-        }
+            ol li::before
+            {
+                left: -15px;
+                top: 50px;
+            }
 
-        li 
-        {
-            width: 30%;
+            li 
+            {
+                width: 30%;
+            }
         }
     }
+}
 
 
+
+
+
+/* Pour desktop grand format */
+@media screen and (min-width: 1450px)
+{
+    #bloc-page
+    {
+        margin: auto;
+    }
 }
