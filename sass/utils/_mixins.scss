@@ -54,23 +54,26 @@
 
 @mixin animation-flat 
 {
-    p 
+    @media screen and (max-width: 495px)
     {
-        animation-name: ellipsis-flat;
-        animation-duration: 2s;
-        width: 50%;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes ellipsis-flat 
-    {
-        0%
+        p 
         {
-            width: 70%;
+            animation-name: ellipsis-flat;
+            animation-duration: 2s;
+            width: 50%;
+            animation-fill-mode: forwards;
         }
-        100%
+
+        @keyframes ellipsis-flat 
         {
-            width: 40%;
+            0%
+            {
+                width: 70%;
+            }
+            100%
+            {
+                width: 40%;
+            }
         }
     }
 
@@ -78,7 +81,7 @@
     {
         animation-name: slide-price;
         animation-duration: 2s;
-        animation-fill-mode: both;
+        animation-fill-mode: forwards;
     }
 
     @keyframes slide-price 
@@ -130,7 +133,6 @@
         position: absolute;
         right: 13px;
         bottom: 25px;
-        z-index: 2;
         animation-name: slide-left;
         animation-duration: 2s;
         animation-delay: 0.38s;

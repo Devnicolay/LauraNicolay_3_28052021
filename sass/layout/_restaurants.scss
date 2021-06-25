@@ -12,7 +12,7 @@
 
     a:visited
     {
-        color: black;
+        color: black; 
     }
 
     h2
@@ -21,9 +21,11 @@
         margin: 50px 0px 10px 23px;
     }
 
-    .card
+    article
     {
         position: relative;
+        background-color: white;
+
         img
         {
             object-fit: cover;
@@ -88,7 +90,7 @@
 /* Pour tablettes */
 @media screen and (min-width: 767px) and (max-width: 992px)
 {
-    .card
+    article
     {
         margin: 3em 1.5em;
         box-shadow: 4px 4px 8px 0px rgb(201 199 199);
@@ -144,7 +146,7 @@
             grid-row-start: 3;
         }
 
-        .card
+        article
         {
             margin: 40px;
             box-shadow: 4px 4px 8px 0px rgb(201 199 199);
