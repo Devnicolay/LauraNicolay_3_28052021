@@ -95,6 +95,20 @@ body .main-menu h2 {
   }
 }
 
+#bloc-blur {
+  animation-name: blur-animation;
+  animation-duration: 6s;
+  animation-fill-mode: backwards;
+}
+@keyframes blur-animation {
+  0% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
 /* Pour tablettes */
 @media screen and (min-width: 767px) and (max-width: 992px) {
   #loading-spinner {

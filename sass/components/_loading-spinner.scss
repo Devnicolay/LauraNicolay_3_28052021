@@ -91,6 +91,24 @@
     }       
 }
 
+#bloc-blur
+{
+    animation-name: blur-animation;
+    animation-duration: 6s;
+    animation-fill-mode: backwards;
+    @keyframes blur-animation 
+    {
+        0%
+        {
+            filter: blur(4px);
+        }
+        100%
+        {
+            filter: blur(4px);
+        }
+    }
+}
+
 
 
 
