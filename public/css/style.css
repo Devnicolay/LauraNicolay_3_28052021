@@ -31,6 +31,14 @@ body .main-menu h2 {
   }
 }
 /* Le trait vert sous Entrées, Plats, Desserts des pages restaurants */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Pour mobiles */
 #loading-spinner {
   position: fixed;
@@ -420,6 +428,11 @@ body {
   margin: 0px 15px 15px 15px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.flat .left, .main-menu .menu #delay-dessert-3 .left, .main-menu .menu #delay-dessert-2 .left, .main-menu .menu #delay-dessert-1 .left, .main-menu .menu #delay-flat-3 .left, .main-menu .menu #delay-flat-2 .left, .main-menu .menu #delay-flat-1 .left, .main-menu .menu #delay-starter-4 .left, .main-menu .menu #delay-starter-3 .left, .main-menu .menu #delay-starter-2 .left {
+  flex-grow: 1;
 }
 .flat h4, .main-menu .menu #delay-dessert-3 h4, .main-menu .menu #delay-dessert-2 h4, .main-menu .menu #delay-dessert-1 h4, .main-menu .menu #delay-flat-3 h4, .main-menu .menu #delay-flat-2 h4, .main-menu .menu #delay-flat-1 h4, .main-menu .menu #delay-starter-4 h4, .main-menu .menu #delay-starter-3 h4, .main-menu .menu #delay-starter-2 h4 {
   font-size: 1.2em;
@@ -428,10 +441,6 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.flat .flat-price, .main-menu .menu #delay-dessert-3 .flat-price, .main-menu .menu #delay-dessert-2 .flat-price, .main-menu .menu #delay-dessert-1 .flat-price, .main-menu .menu #delay-flat-3 .flat-price, .main-menu .menu #delay-flat-2 .flat-price, .main-menu .menu #delay-flat-1 .flat-price, .main-menu .menu #delay-starter-4 .flat-price, .main-menu .menu #delay-starter-3 .flat-price, .main-menu .menu #delay-starter-2 .flat-price {
-  display: flex;
-  justify-content: space-between;
 }
 .flat p, .main-menu .menu #delay-dessert-3 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-starter-4 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-starter-2 p {
   margin: 0px 0px 0px 20px;
@@ -445,63 +454,25 @@ body {
   font-weight: bold;
   padding-right: 20px;
 }
-.flat i, .main-menu .menu #delay-dessert-3 i, .main-menu .menu #delay-dessert-2 i, .main-menu .menu #delay-dessert-1 i, .main-menu .menu #delay-flat-3 i, .main-menu .menu #delay-flat-2 i, .main-menu .menu #delay-flat-1 i, .main-menu .menu #delay-starter-4 i, .main-menu .menu #delay-starter-3 i, .main-menu .menu #delay-starter-2 i {
-  display: none;
-}
-.flat:hover span, .main-menu .menu #delay-dessert-3:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-starter-4:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-starter-2:hover span {
-  animation-name: slide-price;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-@keyframes slide-price {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
-}
-.flat:hover .i-background, .main-menu .menu #delay-dessert-3:hover .i-background, .main-menu .menu #delay-dessert-2:hover .i-background, .main-menu .menu #delay-dessert-1:hover .i-background, .main-menu .menu #delay-flat-3:hover .i-background, .main-menu .menu #delay-flat-2:hover .i-background, .main-menu .menu #delay-flat-1:hover .i-background, .main-menu .menu #delay-starter-4:hover .i-background, .main-menu .menu #delay-starter-3:hover .i-background, .main-menu .menu #delay-starter-2:hover .i-background {
-  width: 60px;
-  height: 100%;
-  background-color: #99E2D0;
-  border-radius: 0px 20px 20px 0px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  animation-name: slide-left-background;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-@keyframes slide-left-background {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-.flat:hover i, .main-menu .menu #delay-dessert-3:hover i, .main-menu .menu #delay-dessert-2:hover i, .main-menu .menu #delay-dessert-1:hover i, .main-menu .menu #delay-flat-3:hover i, .main-menu .menu #delay-flat-2:hover i, .main-menu .menu #delay-flat-1:hover i, .main-menu .menu #delay-starter-4:hover i, .main-menu .menu #delay-starter-3:hover i, .main-menu .menu #delay-starter-2:hover i {
+.flat .plus, .main-menu .menu #delay-dessert-3 .plus, .main-menu .menu #delay-dessert-2 .plus, .main-menu .menu #delay-dessert-1 .plus, .main-menu .menu #delay-flat-3 .plus, .main-menu .menu #delay-flat-2 .plus, .main-menu .menu #delay-flat-1 .plus, .main-menu .menu #delay-starter-4 .plus, .main-menu .menu #delay-starter-3 .plus, .main-menu .menu #delay-starter-2 .plus {
+  margin-right: -35px;
   color: white;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 13px;
-  bottom: 25px;
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-delay: 0.38s;
-  animation-fill-mode: both;
+  align-self: stretch;
+  overflow: hidden;
+  /* transition: <property> <duration> <timing-function> */
+  transition: padding 1s ease-in;
 }
-@keyframes slide-left {
-  0% {
-    transform: translateX(200%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(0%) rotate(360deg);
-  }
+.flat:hover .plus, .main-menu .menu #delay-dessert-3:hover .plus, .main-menu .menu #delay-dessert-2:hover .plus, .main-menu .menu #delay-dessert-1:hover .plus, .main-menu .menu #delay-flat-3:hover .plus, .main-menu .menu #delay-flat-2:hover .plus, .main-menu .menu #delay-flat-1:hover .plus, .main-menu .menu #delay-starter-4:hover .plus, .main-menu .menu #delay-starter-3:hover .plus, .main-menu .menu #delay-starter-2:hover .plus {
+  padding: 0 55px 0 20px;
+}
+.flat:hover .plus i, .main-menu .menu #delay-dessert-3:hover .plus i, .main-menu .menu #delay-dessert-2:hover .plus i, .main-menu .menu #delay-dessert-1:hover .plus i, .main-menu .menu #delay-flat-3:hover .plus i, .main-menu .menu #delay-flat-2:hover .plus i, .main-menu .menu #delay-flat-1:hover .plus i, .main-menu .menu #delay-starter-4:hover .plus i, .main-menu .menu #delay-starter-3:hover .plus i, .main-menu .menu #delay-starter-2:hover .plus i {
+  /* animation: <name> <duration> */
+  animation: rotate 1s;
+  animation-delay: 400ms;
 }
 
 /* Pour mobiles */

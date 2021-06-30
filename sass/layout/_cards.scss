@@ -116,6 +116,13 @@
     margin: 0px 15px 15px 15px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .left
+    {
+        flex-grow: 1;
+    }
     
     h4 
     {
@@ -125,12 +132,6 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-    }
-
-    .flat-price
-    {
-        display: flex;
-        justify-content: space-between;
     }
 
     p 
@@ -149,14 +150,33 @@
         padding-right: 20px;
     }
 
-    i 
+    .plus
     {
-        display: none;
+        margin-right: -35px;
+        color: white;
+        background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        overflow: hidden;
+        /* transition: <property> <duration> <timing-function> */
+        transition: padding 1s ease-in;
     }
 
     &:hover
     {
-        @include animation-flat;
+        .plus
+        {
+            padding: 0 55px 0 20px;
+
+            i 
+            {
+                /* animation: <name> <duration> */
+                animation: rotate 1s;
+                animation-delay: 400ms;
+            }
+        }
     }
 }
 
