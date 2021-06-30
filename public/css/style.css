@@ -423,6 +423,13 @@ body {
   font-size: 1.2em;
   margin: 0px 0px 5px 20px;
   padding-top: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.flat .flat-price, .main-menu .menu #delay-dessert-3 .flat-price, .main-menu .menu #delay-dessert-2 .flat-price, .main-menu .menu #delay-dessert-1 .flat-price, .main-menu .menu #delay-flat-3 .flat-price, .main-menu .menu #delay-flat-2 .flat-price, .main-menu .menu #delay-flat-1 .flat-price, .main-menu .menu #delay-starter-4 .flat-price, .main-menu .menu #delay-starter-3 .flat-price, .main-menu .menu #delay-starter-2 .flat-price {
+  display: flex;
+  justify-content: space-between;
 }
 .flat p, .main-menu .menu #delay-dessert-3 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-starter-4 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-starter-2 p {
   margin: 0px 0px 0px 20px;
@@ -431,32 +438,13 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 70%;
 }
 .flat span, .main-menu .menu #delay-dessert-3 span, .main-menu .menu #delay-dessert-2 span, .main-menu .menu #delay-dessert-1 span, .main-menu .menu #delay-flat-3 span, .main-menu .menu #delay-flat-2 span, .main-menu .menu #delay-flat-1 span, .main-menu .menu #delay-starter-4 span, .main-menu .menu #delay-starter-3 span, .main-menu .menu #delay-starter-2 span {
   font-weight: bold;
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
+  padding-right: 20px;
 }
 .flat i, .main-menu .menu #delay-dessert-3 i, .main-menu .menu #delay-dessert-2 i, .main-menu .menu #delay-dessert-1 i, .main-menu .menu #delay-flat-3 i, .main-menu .menu #delay-flat-2 i, .main-menu .menu #delay-flat-1 i, .main-menu .menu #delay-starter-4 i, .main-menu .menu #delay-starter-3 i, .main-menu .menu #delay-starter-2 i {
   display: none;
-}
-@media screen and (max-width: 495px) {
-  .flat:hover p, .main-menu .menu #delay-dessert-3:hover p, .main-menu .menu #delay-dessert-2:hover p, .main-menu .menu #delay-dessert-1:hover p, .main-menu .menu #delay-flat-3:hover p, .main-menu .menu #delay-flat-2:hover p, .main-menu .menu #delay-flat-1:hover p, .main-menu .menu #delay-starter-4:hover p, .main-menu .menu #delay-starter-3:hover p, .main-menu .menu #delay-starter-2:hover p {
-    animation-name: ellipsis-flat;
-    animation-duration: 2s;
-    width: 50%;
-    animation-fill-mode: forwards;
-  }
-  @keyframes ellipsis-flat {
-    0% {
-      width: 70%;
-    }
-    100% {
-      width: 40%;
-    }
-  }
 }
 .flat:hover span, .main-menu .menu #delay-dessert-3:hover span, .main-menu .menu #delay-dessert-2:hover span, .main-menu .menu #delay-dessert-1:hover span, .main-menu .menu #delay-flat-3:hover span, .main-menu .menu #delay-flat-2:hover span, .main-menu .menu #delay-flat-1:hover span, .main-menu .menu #delay-starter-4:hover span, .main-menu .menu #delay-starter-3:hover span, .main-menu .menu #delay-starter-2:hover span {
   animation-name: slide-price;

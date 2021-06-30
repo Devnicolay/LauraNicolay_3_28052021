@@ -1,28 +1,5 @@
 @mixin animation-flat 
 {
-    @media screen and (max-width: 495px)
-    {
-        p 
-        {
-            animation-name: ellipsis-flat;
-            animation-duration: 2s;
-            width: 50%;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes ellipsis-flat 
-        {
-            0%
-            {
-                width: 70%;
-            }
-            100%
-            {
-                width: 40%;
-            }
-        }
-    }
-
     span 
     {
         animation-name: slide-price;
