@@ -368,13 +368,19 @@ body {
   margin: 8px 0px 0px 15px;
   padding-bottom: 20px;
 }
-.restaurants article .heart1, .restaurants article .heart2 {
+.restaurants article .heart1 {
+  position: absolute;
+  right: 31px;
+  bottom: 31px;
+}
+.restaurants article .heart2 {
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
 .restaurants article .heart1 {
   color: black;
+  font-size: 15px;
 }
 .restaurants article .heart2 {
   opacity: 0;
@@ -433,8 +439,11 @@ body {
 }
 .flat .left, .main-menu .menu #delay-dessert-3 .left, .main-menu .menu #delay-dessert-2 .left, .main-menu .menu #delay-dessert-1 .left, .main-menu .menu #delay-flat-3 .left, .main-menu .menu #delay-flat-2 .left, .main-menu .menu #delay-flat-1 .left, .main-menu .menu #delay-starter-4 .left, .main-menu .menu #delay-starter-3 .left, .main-menu .menu #delay-starter-2 .left {
   flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.flat h4, .main-menu .menu #delay-dessert-3 h4, .main-menu .menu #delay-dessert-2 h4, .main-menu .menu #delay-dessert-1 h4, .main-menu .menu #delay-flat-3 h4, .main-menu .menu #delay-flat-2 h4, .main-menu .menu #delay-flat-1 h4, .main-menu .menu #delay-starter-4 h4, .main-menu .menu #delay-starter-3 h4, .main-menu .menu #delay-starter-2 h4 {
+.flat .left h4, .main-menu .menu #delay-dessert-3 .left h4, .main-menu .menu #delay-dessert-2 .left h4, .main-menu .menu #delay-dessert-1 .left h4, .main-menu .menu #delay-flat-3 .left h4, .main-menu .menu #delay-flat-2 .left h4, .main-menu .menu #delay-flat-1 .left h4, .main-menu .menu #delay-starter-4 .left h4, .main-menu .menu #delay-starter-3 .left h4, .main-menu .menu #delay-starter-2 .left h4 {
   font-size: 1.2em;
   margin: 0px 0px 5px 20px;
   padding-top: 15px;
@@ -442,7 +451,7 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.flat p, .main-menu .menu #delay-dessert-3 p, .main-menu .menu #delay-dessert-2 p, .main-menu .menu #delay-dessert-1 p, .main-menu .menu #delay-flat-3 p, .main-menu .menu #delay-flat-2 p, .main-menu .menu #delay-flat-1 p, .main-menu .menu #delay-starter-4 p, .main-menu .menu #delay-starter-3 p, .main-menu .menu #delay-starter-2 p {
+.flat .left p, .main-menu .menu #delay-dessert-3 .left p, .main-menu .menu #delay-dessert-2 .left p, .main-menu .menu #delay-dessert-1 .left p, .main-menu .menu #delay-flat-3 .left p, .main-menu .menu #delay-flat-2 .left p, .main-menu .menu #delay-flat-1 .left p, .main-menu .menu #delay-starter-4 .left p, .main-menu .menu #delay-starter-3 .left p, .main-menu .menu #delay-starter-2 .left p {
   margin: 0px 0px 0px 20px;
   padding-bottom: 20px;
   font-size: 0.95em;
@@ -569,13 +578,19 @@ footer .fa-hands-helping {
   margin: 10px 0px 0px 0px;
   padding: 40px 0px 0px 25px;
 }
-.main-menu .menu .title-heart .heart1, .main-menu .menu .title-heart .heart2 {
+.main-menu .menu .title-heart .heart1 {
+  position: absolute;
+  top: 53px;
+  right: 46px;
+}
+.main-menu .menu .title-heart .heart2 {
   position: absolute;
   top: 52px;
   right: 45px;
 }
 .main-menu .menu .title-heart .heart1 {
   color: black;
+  font-size: 15px;
 }
 .main-menu .menu .title-heart .heart2 {
   opacity: 0;

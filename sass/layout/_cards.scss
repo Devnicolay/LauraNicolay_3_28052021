@@ -29,7 +29,14 @@
             padding-bottom: 20px;
         }
 
-        .heart1, .heart2
+        .heart1
+        {
+            position: absolute;
+            right: 31px;
+            bottom: 31px;
+        }
+
+        .heart2
         {
             position: absolute;
             right: 30px;
@@ -39,6 +46,7 @@
         .heart1
         {
             color: black;
+            font-size: 15px;
         }
 
         .heart2
@@ -122,26 +130,29 @@
     .left
     {
         flex-grow: 1;
-    }
-    
-    h4 
-    {
-        font-size: 1.2em;
-        margin: 0px 0px 5px 20px;
-        padding-top: 15px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-    }
 
-    p 
-    {
-        margin: 0px 0px 0px 20px;
-        padding-bottom: 20px;
-        font-size: 0.95em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        h4 
+        {
+            font-size: 1.2em;
+            margin: 0px 0px 5px 20px;
+            padding-top: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        p 
+        {
+            margin: 0px 0px 0px 20px;
+            padding-bottom: 20px;
+            font-size: 0.95em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     }
 
     span 
