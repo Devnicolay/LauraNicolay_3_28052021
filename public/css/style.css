@@ -89,9 +89,11 @@ body .main-menu h2 {
 @keyframes time-animation {
   0% {
     opacity: 1;
+    width: 100%;
   }
   100% {
     opacity: 0;
+    width: 0px;
   }
 }
 
