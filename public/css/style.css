@@ -59,7 +59,9 @@ body .main-menu h2 {
   height: 100%;
   width: 100%;
   animation: blur;
-  animation-duration: 6s;
+  animation-duration: 7s;
+  animation-fill-mode: both;
+  animation-timing-function: step-end;
   top: 0;
   bottom: 0;
 }
@@ -127,6 +129,8 @@ body .main-menu h2 {
   }
   100% {
     backdrop-filter: blur(4px);
+    width: 0%;
+    height: 0%;
   }
 }
 /* Pour mobiles */
