@@ -27,29 +27,24 @@
                 padding: 40px 0px 0px 25px;
             }
 
-            .heart1
+            .hearts
             {
-                position: absolute;
-                top: 53px;
-                right: 46px;
-            }
-
-            .heart2
-            {
-                position: absolute;
-                top: 52px;
-                right: 45px;
+                position: relative;
+                margin-top: 55px;
+                margin-left: auto;
+                margin-right: 30px;
             }
 
             .heart1
             {
                 color: black;
-                font-size: 15px;
             }
 
             .heart2
             {
                 opacity: 0;
+                position: absolute;
+                bottom: 10px;
 
                 &:hover
                 {
@@ -121,7 +116,7 @@
 
             .title-heart 
             {
-                grid-column-start: 1/3;
+                grid-column: 1/4;
                 grid-row-start: 1;
             }
 

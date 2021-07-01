@@ -1,22 +1,15 @@
-@mixin animation-heart 
+@keyframes remplissage  
 {
-    background: $linear-gradient;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation-name: remplissage;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-fill-mode: both;
-
-    @keyframes remplissage  
+    0%
     {
-        0%
-        {
-            opacity: 0;
-        }
-        100%
-        {
-            opacity: 1;
-        }
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1.08);
     }
 }
+
+    
