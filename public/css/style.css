@@ -49,6 +49,15 @@ body .main-menu h2 {
     transform: rotate(360deg);
   }
 }
+@keyframes display {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Pour mobiles */
 #loading-spinner {
   position: fixed;
@@ -422,6 +431,37 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  animation-name: display;
+  animation-duration: 3s;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+.flat__delay-starter-2 {
+  animation-delay: 322ms;
+}
+.flat__delay-starter-3 {
+  animation-delay: 644ms;
+}
+.flat__delay-starter-4 {
+  animation-delay: 966ms;
+}
+.flat__delay-flat-1 {
+  animation-delay: 966ms;
+}
+.flat__delay-flat-2 {
+  animation-delay: 1288ms;
+}
+.flat__delay-flat-3 {
+  animation-delay: 1610ms;
+}
+.flat__delay-dessert-1 {
+  animation-delay: 1932ms;
+}
+.flat__delay-dessert-2 {
+  animation-delay: 2254ms;
+}
+.flat__delay-dessert-3 {
+  animation-delay: 2576ms;
 }
 .flat .left {
   flex-grow: 1;
@@ -515,48 +555,6 @@ footer .fa-hands-helping {
   border-radius: 50px 50px 0px 0px;
   margin-top: -60px;
   position: relative;
-}
-.main-menu .menu .flat {
-  animation-name: display;
-  animation-duration: 3s;
-  animation-delay: 100ms;
-  animation-fill-mode: both;
-}
-.main-menu .menu .flat__delay-starter-2 {
-  animation-delay: 322ms;
-}
-.main-menu .menu .flat__delay-starter-3 {
-  animation-delay: 644ms;
-}
-.main-menu .menu .flat__delay-starter-4 {
-  animation-delay: 966ms;
-}
-.main-menu .menu .flat__delay-flat-1 {
-  animation-delay: 966ms;
-}
-.main-menu .menu .flat__delay-flat-2 {
-  animation-delay: 1288ms;
-}
-.main-menu .menu .flat__delay-flat-3 {
-  animation-delay: 1610ms;
-}
-.main-menu .menu .flat__delay-dessert-1 {
-  animation-delay: 1932ms;
-}
-.main-menu .menu .flat__delay-dessert-2 {
-  animation-delay: 2254ms;
-}
-.main-menu .menu .flat__delay-dessert-3 {
-  animation-delay: 2576ms;
-}
-@keyframes display {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .main-menu .menu .title-heart {
   display: flex;
