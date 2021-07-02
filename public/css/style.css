@@ -641,6 +641,9 @@ footer .fa-hands-helping {
     grid-column: 1/4;
     grid-row-start: 1;
   }
+  .main-menu .menu .title-heart .heart2 {
+    bottom: 13px;
+  }
   .main-menu .menu .entrees {
     grid-column-start: 1;
     grid-row-start: 2;
