@@ -8,20 +8,16 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    animation: blur;
-    animation-duration: 7s;
+    animation-name: time-animation;
+    animation-duration: 10s;
+    animation-delay: 6s;
     animation-fill-mode: both;
-    animation-timing-function: step-end;
     top: 0;
     bottom: 0;
 
     .loader
     {
         display: flex;
-        animation-name: time-animation;
-        animation-duration: 1s;
-        animation-delay: 6s;
-        animation-fill-mode: both;
 
         .load-primary
         {
@@ -90,26 +86,19 @@
         0%
         {
             opacity: 1;
-            width: auto;
+            backdrop-filter: blur(4px);
+        }
+        3%
+        {
+            opacity: 0;
         }
         100%
         {
             opacity: 0;
-            width: 0px;
+            backdrop-filter: none;
+            width: 0%;
+            height: 0%;
+            z-index: 0;
         }     
     } 
-}
-
-@keyframes blur 
-{
-    0%
-    {
-        backdrop-filter: blur(4px);
-    }
-    100%
-    {
-        backdrop-filter: blur(4px);
-        width: 0%;
-        height: 0%;
-    }
 }
