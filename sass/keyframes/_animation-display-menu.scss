@@ -6,68 +6,61 @@
         animation-duration: 3s;
         animation-delay: 100ms;
         animation-fill-mode: both;
+
+            &__delay-starter-2
+            {
+                animation-delay: 322ms;
+            }
+
+            &__delay-starter-3
+            {
+                animation-delay: 644ms;
+            }
+
+            &__delay-starter-4
+            {
+                animation-delay: 966ms;
+            }
+
+            &__delay-flat-1
+            {
+                animation-delay: 966ms;
+            }
+
+            &__delay-flat-2
+            {
+                animation-delay: 1288ms;
+            }
+
+            &__delay-flat-3
+            {
+                animation-delay: 1610ms;
+            }
+
+            &__delay-dessert-1
+            {
+                animation-delay: 1932ms;
+            }
+
+            &__delay-dessert-2
+            {
+                animation-delay: 2254ms;
+            }
+
+            &__delay-dessert-3
+            {
+                animation-delay: 2576ms;
+            }
     }
+
     @keyframes display 
     {
         0% {
             opacity:0;
+            transform: translateY(10px);
         }
         100% {
             opacity:1;
         }
-    }
-
-    #delay-starter-2
-    {
-        @extend .flat;
-        animation-delay: 322ms;
-    }
-
-    #delay-starter-3
-    {
-        @extend .flat;
-        animation-delay: 644ms;
-    }
-
-    #delay-starter-4
-    {
-        @extend .flat;
-        animation-delay: 966ms;
-    }
-
-    #delay-flat-1
-    {
-        @extend .flat;
-        animation-delay: 966ms;
-    }
-
-    #delay-flat-2
-    {
-        @extend .flat;
-        animation-delay: 1288ms;
-    }
-
-    #delay-flat-3
-    {
-        @extend .flat;
-        animation-delay: 1610ms;
-    }
-
-    #delay-dessert-1
-    {
-        @extend .flat;
-        animation-delay: 1932ms;
-    }
-
-    #delay-dessert-2
-    {
-        @extend .flat;
-        animation-delay: 2254ms;
-    }
-
-    #delay-dessert-3
-    {
-        @extend .flat;
-        animation-delay: 2576ms;
     }
 }

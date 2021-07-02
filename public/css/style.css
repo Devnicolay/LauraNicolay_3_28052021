@@ -413,7 +413,7 @@ body {
   }
 }
 /* Pour les cartes plat des pages restaurant */
-.flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
+.flat {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 8px 20px 0px #c9c7c7;
@@ -423,13 +423,13 @@ body {
   display: flex;
   align-items: center;
 }
-.flat .left, .main-menu .menu #delay-dessert-3 .left, .main-menu .menu #delay-dessert-2 .left, .main-menu .menu #delay-dessert-1 .left, .main-menu .menu #delay-flat-3 .left, .main-menu .menu #delay-flat-2 .left, .main-menu .menu #delay-flat-1 .left, .main-menu .menu #delay-starter-4 .left, .main-menu .menu #delay-starter-3 .left, .main-menu .menu #delay-starter-2 .left {
+.flat .left {
   flex-grow: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.flat .left h4, .main-menu .menu #delay-dessert-3 .left h4, .main-menu .menu #delay-dessert-2 .left h4, .main-menu .menu #delay-dessert-1 .left h4, .main-menu .menu #delay-flat-3 .left h4, .main-menu .menu #delay-flat-2 .left h4, .main-menu .menu #delay-flat-1 .left h4, .main-menu .menu #delay-starter-4 .left h4, .main-menu .menu #delay-starter-3 .left h4, .main-menu .menu #delay-starter-2 .left h4 {
+.flat .left h4 {
   font-size: 1.2em;
   margin: 0px 0px 5px 20px;
   padding-top: 15px;
@@ -437,7 +437,7 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.flat .left p, .main-menu .menu #delay-dessert-3 .left p, .main-menu .menu #delay-dessert-2 .left p, .main-menu .menu #delay-dessert-1 .left p, .main-menu .menu #delay-flat-3 .left p, .main-menu .menu #delay-flat-2 .left p, .main-menu .menu #delay-flat-1 .left p, .main-menu .menu #delay-starter-4 .left p, .main-menu .menu #delay-starter-3 .left p, .main-menu .menu #delay-starter-2 .left p {
+.flat .left p {
   margin: 0px 0px 0px 20px;
   padding-bottom: 20px;
   font-size: 0.95em;
@@ -445,11 +445,11 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.flat span, .main-menu .menu #delay-dessert-3 span, .main-menu .menu #delay-dessert-2 span, .main-menu .menu #delay-dessert-1 span, .main-menu .menu #delay-flat-3 span, .main-menu .menu #delay-flat-2 span, .main-menu .menu #delay-flat-1 span, .main-menu .menu #delay-starter-4 span, .main-menu .menu #delay-starter-3 span, .main-menu .menu #delay-starter-2 span {
+.flat span {
   font-weight: bold;
   padding-right: 20px;
 }
-.flat .plus, .main-menu .menu #delay-dessert-3 .plus, .main-menu .menu #delay-dessert-2 .plus, .main-menu .menu #delay-dessert-1 .plus, .main-menu .menu #delay-flat-3 .plus, .main-menu .menu #delay-flat-2 .plus, .main-menu .menu #delay-flat-1 .plus, .main-menu .menu #delay-starter-4 .plus, .main-menu .menu #delay-starter-3 .plus, .main-menu .menu #delay-starter-2 .plus {
+.flat .plus {
   margin-right: -35px;
   color: white;
   background-color: #99E2D0;
@@ -460,11 +460,12 @@ body {
   overflow: hidden;
   /* transition: <property> <duration> <timing-function> */
   transition: padding 1s ease-in;
+  text-decoration: none;
 }
-.flat:hover .plus, .main-menu .menu #delay-dessert-3:hover .plus, .main-menu .menu #delay-dessert-2:hover .plus, .main-menu .menu #delay-dessert-1:hover .plus, .main-menu .menu #delay-flat-3:hover .plus, .main-menu .menu #delay-flat-2:hover .plus, .main-menu .menu #delay-flat-1:hover .plus, .main-menu .menu #delay-starter-4:hover .plus, .main-menu .menu #delay-starter-3:hover .plus, .main-menu .menu #delay-starter-2:hover .plus {
+.flat:hover .plus {
   padding: 0 55px 0 20px;
 }
-.flat:hover .plus i, .main-menu .menu #delay-dessert-3:hover .plus i, .main-menu .menu #delay-dessert-2:hover .plus i, .main-menu .menu #delay-dessert-1:hover .plus i, .main-menu .menu #delay-flat-3:hover .plus i, .main-menu .menu #delay-flat-2:hover .plus i, .main-menu .menu #delay-flat-1:hover .plus i, .main-menu .menu #delay-starter-4:hover .plus i, .main-menu .menu #delay-starter-3:hover .plus i, .main-menu .menu #delay-starter-2:hover .plus i {
+.flat:hover .plus i {
   /* animation: <name> <duration> */
   animation: rotate 1s;
   animation-delay: 400ms;
@@ -515,46 +516,47 @@ footer .fa-hands-helping {
   margin-top: -60px;
   position: relative;
 }
-.main-menu .menu .flat, .main-menu .menu #delay-dessert-3, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-2 {
+.main-menu .menu .flat {
   animation-name: display;
   animation-duration: 3s;
   animation-delay: 100ms;
   animation-fill-mode: both;
 }
+.main-menu .menu .flat__delay-starter-2 {
+  animation-delay: 322ms;
+}
+.main-menu .menu .flat__delay-starter-3 {
+  animation-delay: 644ms;
+}
+.main-menu .menu .flat__delay-starter-4 {
+  animation-delay: 966ms;
+}
+.main-menu .menu .flat__delay-flat-1 {
+  animation-delay: 966ms;
+}
+.main-menu .menu .flat__delay-flat-2 {
+  animation-delay: 1288ms;
+}
+.main-menu .menu .flat__delay-flat-3 {
+  animation-delay: 1610ms;
+}
+.main-menu .menu .flat__delay-dessert-1 {
+  animation-delay: 1932ms;
+}
+.main-menu .menu .flat__delay-dessert-2 {
+  animation-delay: 2254ms;
+}
+.main-menu .menu .flat__delay-dessert-3 {
+  animation-delay: 2576ms;
+}
 @keyframes display {
   0% {
     opacity: 0;
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
   }
-}
-.main-menu .menu #delay-starter-2 {
-  animation-delay: 322ms;
-}
-.main-menu .menu #delay-starter-3 {
-  animation-delay: 644ms;
-}
-.main-menu .menu #delay-starter-4 {
-  animation-delay: 966ms;
-}
-.main-menu .menu #delay-flat-1 {
-  animation-delay: 966ms;
-}
-.main-menu .menu #delay-flat-2 {
-  animation-delay: 1288ms;
-}
-.main-menu .menu #delay-flat-3 {
-  animation-delay: 1610ms;
-}
-.main-menu .menu #delay-dessert-1 {
-  animation-delay: 1932ms;
-}
-.main-menu .menu #delay-dessert-2 {
-  animation-delay: 2254ms;
-}
-.main-menu .menu #delay-dessert-3 {
-  animation-delay: 2576ms;
 }
 .main-menu .menu .title-heart {
   display: flex;
@@ -628,11 +630,11 @@ footer .fa-hands-helping {
 @media screen and (min-width: 992px) {
   .main-menu .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100px 1fr 200px;
     margin: -60px 60px 0px 60px;
   }
-  .main-menu .menu .flat, .main-menu .menu #delay-starter-2, .main-menu .menu #delay-starter-3, .main-menu .menu #delay-starter-4, .main-menu .menu #delay-flat-1, .main-menu .menu #delay-flat-2, .main-menu .menu #delay-flat-3, .main-menu .menu #delay-dessert-1, .main-menu .menu #delay-dessert-2, .main-menu .menu #delay-dessert-3 {
+  .main-menu .menu .flat {
     opacity: 0;
   }
   .main-menu .menu .title-heart {
