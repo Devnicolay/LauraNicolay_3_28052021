@@ -371,7 +371,7 @@ body {
   height: 160px;
 }
 .restaurants article h3 {
-  margin: 19px 0px 0px 15px;
+  margin: 19px 70px 0px 15px;
 }
 .restaurants article p {
   margin: 8px 0px 0px 15px;
@@ -383,6 +383,7 @@ body {
   bottom: 30px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .restaurants article .hearts .heart1 {
   color: black;
@@ -391,8 +392,8 @@ body {
 .restaurants article .hearts .heart2 {
   opacity: 0;
   position: absolute;
-  bottom: 3px;
-  right: 7.8px;
+  bottom: 2px;
+  right: 6.5px;
 }
 .restaurants article .hearts .heart2:hover {
   background: linear-gradient(#FF79DA, #9356DC);

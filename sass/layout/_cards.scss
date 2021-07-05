@@ -20,7 +20,7 @@
 
         h3
         {
-            margin: 19px 0px 0px 15px;
+            margin: 19px 70px 0px 15px;
         }
 
         p
@@ -36,6 +36,7 @@
             bottom: 30px;
             border: none;
             background-color: transparent;
+            cursor: pointer;
 
             .heart1
             {
@@ -47,8 +48,8 @@
             {
                 opacity: 0;
                 position: absolute;
-                bottom: 3px;
-                right: 7.8px;
+                bottom: 2px;
+                right: 6.5px;
 
                 &:hover
                 {
