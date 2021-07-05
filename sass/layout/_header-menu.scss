@@ -23,11 +23,24 @@ body
     .fa-arrow-left
     {   
         color:rgb(59, 58, 58);
-        padding: 0px 0px 0px 75px;
         font-size: 1.4em;
         position: absolute;
-        left: 10px;
+        left: 20px;
         top: 37px;
+    }
+}
+
+
+
+/* Pour desktop */
+@media screen and (min-width: 992px)
+{
+    #header-menu
+    {
+        .fa-arrow-left
+        {
+            padding: 0px 0px 0px 75px;
+        }
     }
 }
 
