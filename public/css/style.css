@@ -120,14 +120,14 @@ body .main-menu h2 {
 @keyframes time-animation {
   0% {
     opacity: 1;
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.8);
   }
   3% {
     opacity: 0;
   }
   100% {
     opacity: 0;
-    backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.8);
     width: 0%;
     height: 0%;
     z-index: 0;
