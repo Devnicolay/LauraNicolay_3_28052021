@@ -29,33 +29,31 @@
             padding-bottom: 20px;
         }
 
-        .heart1
-        {
-            position: absolute;
-            right: 31px;
-            bottom: 31px;
-        }
-
-        .heart2
+        .hearts 
         {
             position: absolute;
             right: 30px;
             bottom: 30px;
-        }
+            border: none;
+            background-color: transparent;
 
-        .heart1
-        {
-            color: black;
-            font-size: 15px;
-        }
-
-        .heart2
-        {
-            opacity: 0;
-
-            &:hover
+            .heart1
             {
-                @include animation-heart;
+                color: black;
+                font-size: 14px;
+            }
+
+            .heart2
+            {
+                opacity: 0;
+                position: absolute;
+                bottom: 3px;
+                right: 7.8px;
+
+                &:hover
+                {
+                    @include animation-heart;
+                }
             }
         }
             
