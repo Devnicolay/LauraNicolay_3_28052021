@@ -58,7 +58,6 @@ body .main-menu h2 {
     opacity: 1;
   }
 }
-/* Pour mobiles */
 #loading-spinner {
   position: fixed;
   z-index: 1;
