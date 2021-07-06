@@ -43,7 +43,7 @@
     }
         
 
-    .fonction
+    .operation-list
     {
         display: flex;
         align-items: baseline;
@@ -67,7 +67,7 @@
         }
     }
 
-    .fonction:hover
+    .operation-list:hover
     {
         background-color: #efe5fa; 
     }
@@ -96,7 +96,7 @@
         {
             margin: 0px 60px;
         
-            .fonction
+            .operation-list
             {
                 margin-left: 0px;
                 margin-right: 0px;

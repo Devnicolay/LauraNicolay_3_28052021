@@ -98,9 +98,14 @@
 {
     .restaurants
     {
-        article
+        a
         {
             margin: 40px;
+
+            article 
+            {
+                margin: 0px;
+            }
         }
     }
 }
@@ -239,5 +244,3 @@
         }
     }
 }
-
-    

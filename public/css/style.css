@@ -7,6 +7,9 @@
   font-family: roboto;
   src: url(polices/roboto/Roboto-Regular.ttf);
   src: url(polices/roboto/Roboto-Bold.ttf);
+  src: url(polices/roboto/Roboto-Black.ttf);
+  src: url(polices/roboto/Roboto-Light.ttf);
+  src: url(polices/roboto/Roboto-Medium.ttf);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -31,7 +34,7 @@ body .main-menu h2 {
   }
 }
 /* Le trait vert sous Entrées, Plats, Desserts des pages restaurants */
-@keyframes remplissage {
+@keyframes padding-heart {
   0% {
     opacity: 0;
     transform: scale(1);
@@ -201,6 +204,7 @@ body {
 #localization p {
   margin: 20px 30px 30px 30px;
   color: gray;
+  font-weight: 100;
 }
 #localization #button_restaurant {
   text-decoration: none;
@@ -252,7 +256,7 @@ body {
 #company-presentation a:link {
   text-decoration: none;
 }
-#company-presentation .fonction {
+#company-presentation .operation-list {
   display: flex;
   align-items: baseline;
   align-content: space-between;
@@ -263,14 +267,14 @@ body {
   padding: 10px;
   color: black;
 }
-#company-presentation .fonction i {
+#company-presentation .operation-list i {
   margin-left: 40px;
 }
-#company-presentation .fonction p {
+#company-presentation .operation-list p {
   margin-left: 30px;
   font-weight: bold;
 }
-#company-presentation .fonction:hover {
+#company-presentation .operation-list:hover {
   background-color: #efe5fa;
 }
 #company-presentation i:hover {
@@ -285,7 +289,7 @@ body {
   #bloc-page #company-presentation {
     margin: 0px 60px;
   }
-  #bloc-page #company-presentation .fonction {
+  #bloc-page #company-presentation .operation-list {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -398,7 +402,7 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  animation-name: remplissage;
+  animation-name: padding-heart;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
@@ -423,8 +427,11 @@ body {
 /* Pour les cartes restaurants de la page d'accueil */
 /* Pour desktop */
 @media screen and (min-width: 992px) {
-  .restaurants article {
+  .restaurants a {
     margin: 40px;
+  }
+  .restaurants a article {
+    margin: 0px;
   }
 }
 /* Pour les cartes plat des pages restaurant */
@@ -591,7 +598,7 @@ footer .fa-hands-helping {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  animation-name: remplissage;
+  animation-name: padding-heart;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
