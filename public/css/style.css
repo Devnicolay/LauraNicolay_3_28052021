@@ -77,7 +77,7 @@ body .main-menu h2 {
 #loading-spinner .loader {
   display: flex;
 }
-#loading-spinner .loader .load-primary, #loading-spinner .loader .load-tertiary2, #loading-spinner .loader .load-tertiary, #loading-spinner .loader .load-secondary2, #loading-spinner .loader .load-secondary, #loading-spinner .loader .load-primary2 {
+#loading-spinner .loader .load {
   background-color: #9356DC;
   width: 15px;
   height: 100px;
@@ -90,22 +90,22 @@ body .main-menu h2 {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-#loading-spinner .loader .load-primary2 {
+#loading-spinner .loader .load__primary2 {
   animation-delay: 333ms;
 }
-#loading-spinner .loader .load-secondary {
+#loading-spinner .loader .load__secondary {
   background-color: #FF79DA;
   animation-delay: 499ms;
 }
-#loading-spinner .loader .load-secondary2 {
+#loading-spinner .loader .load__secondary2 {
   background-color: #FF79DA;
   animation-delay: 666ms;
 }
-#loading-spinner .loader .load-tertiary {
+#loading-spinner .loader .load__tertiary {
   background-color: #99E2D0;
   animation-delay: 832ms;
 }
-#loading-spinner .loader .load-tertiary2 {
+#loading-spinner .loader .load__tertiary2 {
   background-color: #99E2D0;
   animation-delay: 1000ms;
 }
