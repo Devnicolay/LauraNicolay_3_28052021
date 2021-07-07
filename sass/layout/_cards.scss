@@ -125,7 +125,7 @@
     display: flex;
     align-items: center;
     animation-name: display;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-delay: 100ms;
     animation-fill-mode: both;
 
@@ -219,7 +219,7 @@
         align-self: stretch;
         overflow: hidden;
         /* transition: <property> <duration> <timing-function> */
-        transition: padding 1s ease-in;
+        transition: padding 500ms ease-in;
         text-decoration: none;
     }
 
