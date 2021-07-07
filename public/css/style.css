@@ -242,6 +242,33 @@ body {
   counter-increment: number-operation;
   position: relative;
 }
+#company-presentation ol li a {
+  text-decoration: none;
+  color: black;
+}
+#company-presentation ol li a .operation-list {
+  display: flex;
+  align-items: baseline;
+  align-content: space-between;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 0px 4px 8px 3px #c9c7c7;
+  padding: 10px;
+}
+#company-presentation ol li a .operation-list i {
+  margin-left: 40px;
+}
+#company-presentation ol li a .operation-list p {
+  margin-left: 30px;
+  font-weight: bold;
+}
+#company-presentation ol li a .operation-list:hover {
+  background-color: #efe5fa;
+}
+#company-presentation ol li a i:hover {
+  color: #9356DC;
+}
 #company-presentation ol li::before {
   content: counter(number-operation);
   background-color: #9356DC;
@@ -255,33 +282,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#company-presentation a:link {
-  text-decoration: none;
-}
-#company-presentation .operation-list {
-  display: flex;
-  align-items: baseline;
-  align-content: space-between;
-  background-color: #F2F2F2;
-  border-radius: 15px;
-  margin: 30px;
-  box-shadow: 0px 4px 8px 3px #c9c7c7;
-  padding: 10px;
-  color: black;
-}
-#company-presentation .operation-list i {
-  margin-left: 40px;
-}
-#company-presentation .operation-list p {
-  margin-left: 30px;
-  font-weight: bold;
-}
-#company-presentation .operation-list:hover {
-  background-color: #efe5fa;
-}
-#company-presentation i:hover {
-  color: #9356DC;
 }
 
 /* Pour desktop */
@@ -304,7 +304,7 @@ body {
     left: -15px;
     top: 50px;
   }
-  #bloc-page #company-presentation li {
+  #bloc-page #company-presentation ol li {
     width: 30%;
   }
 }
