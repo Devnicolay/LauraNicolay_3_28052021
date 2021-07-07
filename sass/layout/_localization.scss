@@ -44,15 +44,8 @@
 
     #button_restaurant 
     {
-        @include button-gradient;
         display: inline-block;
         margin-bottom: 50px;
-
-        &:hover
-        {
-            @include button-lightness;
-        }
-
     }
 }
 

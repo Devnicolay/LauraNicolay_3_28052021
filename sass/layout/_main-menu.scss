@@ -32,9 +32,6 @@
                 margin-top: 55px;
                 margin-left: auto;
                 margin-right: 30px;
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
             }
 
             .heart1
@@ -46,7 +43,7 @@
             {
                 opacity: 0;
                 position: absolute;
-                bottom: 8px;
+                bottom: 10px; 
 
                 &:hover
                 {
@@ -70,15 +67,9 @@
 
         #button-order
         {
-            @include button-gradient;
             width: 40%;
             height: 20px;
             text-align: center;
-
-            &:hover
-            {
-                @include button-lightness;
-            }
         }
 
         .button-order
@@ -123,7 +114,7 @@
 
                 .heart2
                 {
-                    bottom: 9px;
+                    bottom: 13px;
                 }
             }
 

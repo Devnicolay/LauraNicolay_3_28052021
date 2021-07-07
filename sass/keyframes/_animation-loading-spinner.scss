@@ -1,0 +1,32 @@
+@keyframes loading-spinner 
+{
+    0%
+    {
+        transform: scaleY(0.5);
+    }
+    100%
+    {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes time-animation 
+{
+    0%
+    {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    3%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+        background: rgba(255, 255, 255, 0.8);
+        width: 0%;
+        height: 0%;
+        z-index: 0;
+    }     
+} 
