@@ -32,34 +32,34 @@
             animation-direction: alternate;
             animation-timing-function: ease-in-out;
 
-                &__primary2
-                {
-                    animation-delay: 333ms;
-                }
+            &__primary2
+            {
+                animation-delay: 333ms;
+            }
 
-                &__secondary
-                {
-                    background-color: $secondary-color;
-                    animation-delay: 499ms;
-                }
+            &__secondary
+            {
+                background-color: $secondary-color;
+                animation-delay: 499ms;
+            }
 
-                &__secondary2
-                {
-                    background-color: $secondary-color;
-                    animation-delay: 666ms;
-                }
+            &__secondary2
+            {
+                background-color: $secondary-color;
+                animation-delay: 666ms;
+            }
 
-                &__tertiary
-                {
-                    background-color: $tertiary-color;
-                    animation-delay: 832ms;
-                }
+            &__tertiary
+            {
+                background-color: $tertiary-color;
+                animation-delay: 832ms;
+            }
 
-                &__tertiary2
-                {
-                    background-color: $tertiary-color;
-                    animation-delay: 1000ms;
-                }
+            &__tertiary2
+            {
+                background-color: $tertiary-color;
+                animation-delay: 1000ms;
+            }
         }
     }
 }
