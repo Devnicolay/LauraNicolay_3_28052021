@@ -1,3 +1,5 @@
+[!https://img.shields.io/badge/uses-CSS-9CF][!https://img.shields.io/badge/uses-HTML-9CF] [!https://img.shields.io/badge/build%20with-Sass-red]
+
 # Ohmyfood
 
 
