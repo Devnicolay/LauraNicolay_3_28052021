@@ -8,7 +8,7 @@ Projet 3 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 
 ## Lien du projet
 
-[Site Web FishEye](https://devnicolay.github.io/LauraNicolay_3_28052021/)
+[Site Web Ohmyfood](https://devnicolay.github.io/LauraNicolay_3_28052021/)
 
 ## Maquette mobile de la page d'accueil
 
