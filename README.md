@@ -8,7 +8,7 @@ Projet 3 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 
 ## Lien du projet
 
-[Site Web Ohmyfood](https://devnicolay.github.io/LauraNicolay_2_11052021//)
+[Site Web OhmyFood](https://devnicolay.github.io/LauraNicolay_2_11052021//)
 
 ## Maquette mobile de la page d'accueil
 
